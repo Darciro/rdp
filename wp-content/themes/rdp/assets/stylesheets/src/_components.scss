@@ -1,0 +1,141 @@
+.rounded-download-btn {
+
+}
+
+.hexagon {
+  @extend .d-flex;
+  @extend .justify-content-center;
+  @extend .align-items-center;
+  width: 150px;
+  height: 90px;
+  background-color: $rdp-purple;
+  position: relative;
+  margin: auto;
+  color: #fff;
+
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -32px;
+    width: 0;
+    border-bottom: 32px solid $rdp-purple;
+    border-left: 75px solid transparent;
+    border-right: 75px solid transparent;
+  }
+
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -32px;
+    width: 0;
+    border-top: 32px solid $rdp-purple;
+    border-left: 75px solid transparent;
+    border-right: 75px solid transparent;
+  }
+
+}
+
+.results-hive {
+  position: relative;
+
+  .result {
+    /*position: absolute;
+    top: 50%;
+    left: 50%;*/
+    width: 150px;
+    height: 150px;
+    perspective: 500px;
+
+    &:hover {
+      .content {
+        transform: rotateY( 180deg ) ;
+        transition: transform 0.5s;
+      }
+    }
+  }
+
+  .content {
+    position: absolute;
+    padding-top: 30px;
+    width: 100%;
+    height: 100%;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+  }
+
+  .front,
+  .back {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+  }
+
+  .back {
+    transform: rotateY( 180deg );
+  }
+
+}
+
+.rounded-download-btn-wrapper {
+  width: 250px;
+  height: 250px;
+  position: relative;
+
+  .rounded-download-btn {
+    display: block;
+    position: absolute;
+    width: 220px;
+    height: 220px;
+    top: 50%;
+    margin-top: -110px;
+    background-color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 30px;
+    padding: 40px;
+    z-index: 1;
+    border: 3px solid $rdp-pink;
+
+    > * {
+      position: relative;
+      z-index: 2;
+    }
+
+    img {
+      margin-bottom: 5px;
+    }
+
+    span {
+      @extend .text-rdp-pink;
+      @extend .font-satoshi-black;
+      @extend .fs-18;
+      @extend .text-uppercase;
+      display: block;
+      max-width: 180px;
+      margin: auto;
+      text-align: center;
+    }
+  }
+
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    top: 50%;
+    right: 50%;
+    margin-top: -125px;
+    margin-right: -110px;
+    z-index: 0;
+    background-color: #fff;
+    border-radius: 50%;
+  }
+
+}

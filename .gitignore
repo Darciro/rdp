@@ -1,0 +1,10 @@
+.DS_Store
+.idea
+.htaccess
+htdocs
+node_modules/
+wp-config.php
+wp-content/uploads
+wp-content/debug.log
+temp.php
+wp-content/db.php

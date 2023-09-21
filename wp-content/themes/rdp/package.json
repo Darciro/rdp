@@ -1,0 +1,54 @@
+{
+  "name": "itl",
+  "version": "1.0.0",
+  "description": "Instituto de Transporte e Logística",
+  "author": "Ricardo Carvalho",
+  "license": "GPL-2.0-or-later",
+  "keywords": [
+    "WordPress",
+    "Theme"
+  ],
+  "homepage": "https://github.com/darciro",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/darciro"
+  },
+  "bugs": {
+    "url": "https://github.com/darciro"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-uglify-es": "^2.0.0",
+    "jquery-mask-plugin": "^1.14.16",
+    "livereload": "^0.9.1",
+    "rtlcss": "^2.5.0"
+  },
+  "rtlcssConfig": {
+    "options": {
+      "autoRename": false,
+      "autoRenameStrict": false,
+      "blacklist": {},
+      "clean": true,
+      "greedy": false,
+      "processUrls": false,
+      "stringMap": []
+    },
+    "plugins": [],
+    "map": false
+  },
+  "scripts": {
+    "watch": "concurrently \"sass --watch ./assets/stylesheets/src/main.scss ./assets/stylesheets/dist/bundle.css\" \"gulp watch\"",
+    "build": "gulp dev prod"
+  },
+  "dependencies": {
+    "animate.css": "^4.1.1",
+    "bootstrap": "^5.3.1",
+    "concurrently": "^8.0.1",
+    "gulp-notify": "^4.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-wait": "^0.0.2",
+    "sass": "^1.51.0"
+  }
+}
