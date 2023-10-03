@@ -5,8 +5,15 @@ $assets-url: '../../../assets/' !default;
 $rdp-main: #f5ac00 !default;
 $rdp-secondary: #1e6d2d !default;
 $rdp-purple: #aa69e3 !default;
+$rdp-light-purple: #f5eefa !default;
 $rdp-pink: #f7759e !default;
-$rdp--light-green: #3c9a96 !default;
+$rdp-light-pink: #fff3f7 !default;
+$rdp-red: #fb3f15 !default;
+$rdp-light-red: #fcece9 !default;
+$rdp-green: #1c6d2c !default;
+$rdp-green-water: #3c9a96 !default;
+$rdp-light-green-water: #ecf5f5 !default;
+$rdp-light-green: #e6efe6 !default;
 
 /* Mixins */
 @mixin placeholder-color($color) {
@@ -45,7 +52,6 @@ $rdp--light-green: #3c9a96 !default;
 /* Root */
 * {
   font-family: 'Roboto', sans-serif;
-  font-weight: 400;
 }
 
 body {
@@ -59,27 +65,100 @@ body {
 }
 
 /* Globals */
-.bg-rdp-main {
-  background-color: $rdp-main !important;
-}
-
 .text-rdp-main {
   color: $rdp-main !important;
-}
-.bg-rdp-secondary {
-  background-color: $rdp-secondary !important;
-}
-
-.bg-rdp-pink {
-  background-color: $rdp-pink !important;
 }
 
 .text-rdp-secondary {
   color: $rdp-secondary !important;
 }
 
+.text-rdp-green-water {
+  color: $rdp-green-water !important;
+}
+
+.text-rdp-light-green-water {
+  color: $rdp-light-green-water !important;
+}
+
+.text-rdp-purple {
+  color: $rdp-purple !important;
+}
+
+.text-rdp-light-purple {
+  color: $rdp-light-purple !important;
+}
+
 .text-rdp-pink {
   color: $rdp-pink !important;
+}
+
+.text-rdp-light-pink {
+  color: $rdp-light-pink !important;
+}
+
+.text-rdp-light-green {
+  color: $rdp-light-green !important;
+}
+
+.text-rdp-green {
+  color: $rdp-green !important;
+}
+
+.text-rdp-red {
+  color: $rdp-red !important;
+}
+
+.text-rdp-light-red {
+  color: $rdp-light-red !important;
+}
+
+.bg-rdp-main {
+  background-color: $rdp-main !important;
+}
+
+.bg-rdp-secondary {
+  background-color: $rdp-secondary !important;
+}
+
+.bg-rdp-green-water {
+  background-color: $rdp-green-water !important;
+}
+
+.bg-rdp-light-green-water {
+  background-color: $rdp-light-green-water !important;
+}
+
+.bg-purple {
+  background-color: $rdp-purple !important;
+}
+
+.bg-light-purple {
+  background-color: $rdp-light-purple !important;
+}
+
+.bg-rdp-pink {
+  background-color: $rdp-pink !important;
+}
+
+.bg-rdp-light-pink {
+  background-color: $rdp-light-pink !important;
+}
+
+.bg-rdp-green {
+  background-color: $rdp-green !important;
+}
+
+.bg-rdp-light-green {
+  background-color: $rdp-light-green !important;
+}
+
+.bg-rdp-red {
+  background-color: $rdp-red !important;
+}
+
+.bg-rdp-light-red {
+  background-color: $rdp-light-red !important;
 }
 
 .font-satoshi-black {
@@ -88,6 +167,10 @@ body {
 
 .font-satoshi-medium {
   font-family: 'Satoshi-Medium' !important;
+}
+
+.font-satoshi-regular {
+  font-family: 'Satoshi-Regular' !important;
 }
 
 .font-satoshi-light {
@@ -110,6 +193,10 @@ body {
   font-size: 28px !important;
 }
 
+.fs-19 {
+  font-size: 19px !important;
+}
+
 .fs-18 {
   font-size: 18px !important;
 }
@@ -129,4 +216,34 @@ body {
 .ignore-gutters {
   margin-left: calc(var(--bs-gutter-x) * 0.5 * -1);
   margin-right: calc(var(--bs-gutter-x) * 0.5* -1);
+}
+
+/* Globals */
+.icon-title {
+  position: relative;
+
+  img {
+    position: absolute;
+    left: -52px;
+    top: -8px;
+  }
+
+  &.alt {
+    display: inline-block;
+    padding: 10px 30px 10px 52px;
+
+    img {
+      background-color: #fff;
+      position: absolute;
+      left: -52px;
+      top: 50%;
+      margin-top: -43px;
+      border-radius: 50%;
+      padding: 3px;
+    }
+  }
+}
+
+.rdp-container {
+  max-width: 1140px;
 }
