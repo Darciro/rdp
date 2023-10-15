@@ -9,7 +9,7 @@ if (!class_exists('Setup')) :
 
 	class Setup
 	{
-		public $version = '0.2.0';
+		public $version = '0.3.0';
 		public $theme_slug = 'rdp';
 
 		public function __construct()
@@ -26,7 +26,7 @@ if (!class_exists('Setup')) :
 
 			add_filter('acf/settings/save_json', array($this, 'get_local_json_path'));
 			add_filter('acf/settings/load_json', array($this, 'add_local_json_path'));
-			add_filter('use_block_editor_for_post', array($this, 'disable_block_editor_for_page_ids'), 10, 2);
+			add_filter('use_block_editor_for_post', '__return_false');
 
 			add_action('after_setup_theme', array($this, 'rdp_i18n'));
 			add_action('after_setup_theme', array($this, 'rdp_theme_support'));
@@ -122,15 +122,6 @@ if (!class_exists('Setup')) :
 		public function disable_editor_fullscreen_mode() {
 			$script = "window.onload = function() { const isFullscreenMode = wp.data.select( 'core/edit-post' ).isFeatureActive( 'fullscreenMode' ); if ( isFullscreenMode ) { wp.data.dispatch( 'core/edit-post' ).toggleFeature( 'fullscreenMode' ); } }";
 			wp_add_inline_script( 'wp-blocks', $script );
-		}
-
-		public function disable_block_editor_for_page_ids( $use_block_editor, $post ) {
-
-			$excluded_ids = array( 25 );
-			if ( in_array( $post->ID, $excluded_ids ) ) {
-				return false;
-			}
-			return $use_block_editor;
 		}
 
 	}

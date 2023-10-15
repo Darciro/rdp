@@ -133,6 +133,11 @@
     height: 100%;
     transition: transform 1s;
     transform-style: preserve-3d;
+
+    .back {
+      font-size: 14px;
+      line-height: 15px;
+    }
   }
 
   .front,
@@ -155,15 +160,15 @@
 }
 
 .rounded-download-btn-wrapper {
-  width: 250px;
-  height: 250px;
+  width: 230px;
+  height: 230px;
   position: relative;
 
   .rounded-download-btn {
     display: block;
     position: absolute;
-    width: 220px;
-    height: 220px;
+    width: 200px;
+    height: 200px;
     top: 50%;
     margin-top: -110px;
     background-color: #fff;
@@ -173,7 +178,7 @@
     text-transform: uppercase;
     font-weight: bolder;
     font-size: 30px;
-    padding: 40px;
+    padding: 30px;
     z-index: 1;
     border: 3px solid $rdp-pink;
 
@@ -202,12 +207,12 @@
     content: '';
     display: block;
     position: absolute;
-    width: 250px;
-    height: 250px;
+    width: 230px;
+    height: 230px;
     top: 50%;
     right: 50%;
     margin-top: -125px;
-    margin-right: -110px;
+    margin-right: -100px;
     z-index: 0;
     background-color: #fff;
     border-radius: 50%;
@@ -266,5 +271,37 @@
         --bs-table-bg-state: auto;
       }
     }
+
+    &.table-alt {
+      thead,
+      tbody {
+        border: none !important;
+      }
+
+      .col-title {
+
+      }
+
+      .col-blank {
+        min-width: 75px;
+      }
+
+      tr:nth-last-child(2) {
+        border-bottom: 1px solid;
+      }
+
+      .border-top {
+        border-top: 1px solid #000 !important;
+      }
+
+      .border-bottom {
+        border-bottom: 1px solid #000 !important;
+      }
+    }
   }
+
+}
+
+#logos-carousel {
+
 }

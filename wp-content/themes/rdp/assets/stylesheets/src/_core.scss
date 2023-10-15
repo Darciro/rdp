@@ -14,6 +14,8 @@ $rdp-green: #1c6d2c !default;
 $rdp-green-water: #3c9a96 !default;
 $rdp-light-green-water: #ecf5f5 !default;
 $rdp-light-green: #e6efe6 !default;
+$rdp-orange: #ec9245 !default;
+$rdp-light-orange: #ebe3d3 !default;
 
 /* Mixins */
 @mixin placeholder-color($color) {
@@ -28,6 +30,30 @@ $rdp-light-green: #e6efe6 !default;
   }
   &:-ms-input-placeholder { /* Internet Explorer 10+ */
     color: $color;
+  }
+}
+
+@mixin grayscale_element($value) {
+  -webkit-filter: #{"grayscale(#{$value})"};
+  -moz-filter: #{"grayscale(#{$value})"};
+  filter:#{"grayscale(#{$value})"};
+}
+
+@mixin transition($args...) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
+
+@for $i from 1 through 20 {
+  $miliseconds: ($i * 50);
+  .animate__animated.animate__delay-#{$miliseconds}ms {
+    -webkit-animation-delay: #{$miliseconds}ms;
+    animation-delay: #{$miliseconds}ms;
+    -webkit-animation-delay: #{$miliseconds}ms;
+    animation-delay: #{$miliseconds}ms;
   }
 }
 
@@ -65,6 +91,26 @@ body {
 }
 
 /* Globals */
+.grayscale {
+  @include grayscale_element(100%);
+  transition: all 200ms ease-in-out;
+  &:hover {
+    @include grayscale_element(0);
+  }
+}
+
+.animate__animated {
+  visibility: hidden;
+
+  &.animated {
+    visibility: visible;
+  }
+
+  @include media-breakpoint-down(md) {
+    visibility: visible;
+  }
+}
+
 .text-rdp-main {
   color: $rdp-main !important;
 }
@@ -111,6 +157,14 @@ body {
 
 .text-rdp-light-red {
   color: $rdp-light-red !important;
+}
+
+.text-rdp-orange {
+  color: $rdp-orange !important;
+}
+
+.text-rdp-light-orange {
+  color: $rdp-light-orange !important;
 }
 
 .bg-rdp-main {
@@ -161,6 +215,14 @@ body {
   background-color: $rdp-light-red !important;
 }
 
+.bg-rdp-orange {
+  background-color: $rdp-orange !important;
+}
+
+.bg-rdp-light-orange {
+  background-color: $rdp-light-orange !important;
+}
+
 .font-satoshi-black {
   font-family: 'Satoshi-Black' !important;
 }
@@ -191,6 +253,10 @@ body {
 
 .fs-28 {
   font-size: 28px !important;
+}
+
+.fs-24 {
+  font-size: 24px !important;
 }
 
 .fs-19 {

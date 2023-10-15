@@ -23,45 +23,7 @@
 <?php wp_body_open(); ?>
 
 <header>
-	<nav id="main-nav" class="fixed-top">
-		<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-nav" aria-controls="offcanvas-nav">
-			<span></span>
-			<span></span>
-			<span></span>
-		</button>
-		<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas-nav" aria-labelledby="offcanvas-nav-label">
-			<div class="offcanvas-body">
-				<ul class="main-menu">
-					<li>
-						<a href="#">Metodologia</a>
-					</li>
-					<li>
-						<a href="#">Tamanho da área</a>
-					</li>
-					<li>
-						<a href="#">Resultados</a>
-						<ul>
-							<li>
-								<a href="#">Econômicos</a>
-							</li>
-							<li>
-								<a href="#">Sociais</a>
-							</li>
-							<li>
-								<a href="#">Ambientais</a>
-							</li>
-						</ul>
-					</li>
-					<li>
-						<a href="#">Mapas interativos</a>
-					</li>
-					<li>
-						<a href="#">Equipe técnica</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</nav>
+	<?php get_template_part('template-parts/offcanvas-nav'); ?>
 </header>
 
 <main>
