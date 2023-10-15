@@ -29,6 +29,10 @@
             navCanvas.addEventListener('hide.bs.offcanvas', event => {
                 $('#main-nav').removeClass('menu-active');
             })
+
+            $('.main-menu a').on('click', function (e) {
+                $('#main-nav .navbar-toggler').trigger('click');
+            })
         },
 
         siteFX: function () {

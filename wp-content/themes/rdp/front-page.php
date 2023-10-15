@@ -27,7 +27,7 @@ get_header();
                     </div>
                 </section>
 
-                <section>
+                <section id="video">
                     <div class="row ignore-gutters">
                         <div class="col-12 px-0">
                             <?php
@@ -98,7 +98,7 @@ get_header();
                     </div>
                 </section>
 
-                <section class="py-5">
+                <section id="impacts" class="py-5">
                     <div class="row justify-content-center">
                         <div class="col-10 rdp-container animate__animated" data-animation="fadeInUp">
                             <p class="fs-18"><span class="text-uppercase fw-bold">30 milhões de hectares de pastagens degradadas.</span> Esse é o tamanho da área que o Plano ABC+ (Plano Setorial de Mitigação e de Adaptação às Mudanças Climáticas para a Consolidação de uma Economia de Baixa Emissão de Carbono na Agricultura 2020-2030) pretende recuperar até 2030 no Brasil. O TEEBAgriFood, por meio de uma parceria entre o Programa das Nações Unidas para o Meio Ambiente (PNUMA) e o Grupo de Políticas Públicas da Esalq/USP, buscou entender o impacto dessa política, considerando as interações entre sociedade, economia e natureza. Para isso, avaliou dois cenários até 2030: um com adoção de tecnologias convencionais para RPD e outro que, além da RPD convencional, adota em parte da área a integração lavoura-pecuária (iLP). Ambos os cenários foram comparados a uma linha de base - ou business as usual (BAU) - isto é, uma projeção que considera a não aplicação da política. Trazemos a
@@ -127,7 +127,7 @@ get_header();
                     </div>
                 </section>
 
-                <section class="py-5">
+                <section id="degraded-area" class="py-5">
                     <div class="row justify-content-center mt-5">
                         <div class="col-10 rdp-container">
                             <div class="text-center animate__animated" data-animation="fadeInUp">
@@ -137,8 +137,8 @@ get_header();
                             <div class="text-center">
                                 <img src="<?php echo get_template_directory_uri() ?>/assets/images/mapa102milhões.png" class="mx-auto img-fluid">
                             </div>
-                            <div class="mt-5 animate__animated" data-animation="fadeInUp">
-                                <h2 class="font-satoshi-black fs-39 mb-3">Área degradada por tamanho de propriedade e região</h2>
+                            <div class="mt-5">
+                                <h2 class="font-satoshi-black fs-39 mb-3 animate__animated" data-animation="fadeInUp">Área degradada por tamanho de propriedade e região</h2>
                                 <div class="flourish-embed flourish-hierarchy" data-src="visualisation/15056138">
                                     <script src="https://public.flourish.studio/resources/embed.js"></script>
                                 </div>
@@ -192,7 +192,7 @@ get_header();
                     </div>
                 </section>
 
-                <section class="bg-light-purple ignore-gutters py-5">
+                <section id="results" class="bg-light-purple ignore-gutters py-5">
                     <div class="row">
                         <div class="col-12 text-center">
                             <div class="animate__animated" data-animation="fadeInUp">
@@ -429,7 +429,7 @@ get_header();
                     </div>
                 </section>
 
-                <section class="bg-light-purple ignore-gutters py-5">
+                <section id="economic-results" class="bg-light-purple ignore-gutters py-5">
                     <div class="row justify-content-center">
                         <div class="col-10 rdp-container">
                             <div class="row">
@@ -578,7 +578,7 @@ get_header();
                     </div>
                 </section>
 
-                <section class="bg-rdp-light-red ignore-gutters py-5 mb-5">
+                <section id="social-results" class="bg-rdp-light-red ignore-gutters py-5 mb-5">
                     <div class="row justify-content-center">
                         <div class="col-10 rdp-container mb-5 animate__animated" data-animation="fadeInUp">
                             <h2 class="font-satoshi-black fs-17 bg-rdp-pink text-white icon-title alt text-uppercase rounded-end-pill">
