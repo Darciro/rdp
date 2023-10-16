@@ -9,7 +9,7 @@ if (!class_exists('Setup')) :
 
 	class Setup
 	{
-		public $version = '0.3.0';
+		public $version = '0.4.0';
 		public $theme_slug = 'rdp';
 
 		public function __construct()

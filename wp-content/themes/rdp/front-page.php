@@ -16,7 +16,7 @@ get_header();
 ?>
     <div class="container-fluid h-100">
         <div class="row h-100">
-            <div class="col-12 col-md-10">
+            <div class="col-12 col-lg-10">
 
                 <section id="intro" class="text-white ignore-gutters bg-rdp-main vh-100">
                     <div class="row justify-content-center">
@@ -82,7 +82,7 @@ get_header();
 
                 <section id="complete-results" class="ignore-gutters pt-5 bg-rdp-pink">
                     <h2 class="font-satoshi-black fs-28 text-uppercase text-center text-white mb-3 mt-5 animate__animated" data-animation="fadeInUp">Acesse os resultados completos</h2>
-                    <div class="d-flex justify-content-center">
+                    <div class="d-flex flex-column flex-md-row justify-content-center align-items-center">
                         <div class="rounded-download-btn-wrapper mx-5">
                             <a href="#" class="rounded-download-btn animate__animated" data-animation="fadeIn">
                                 <img src="<?php echo get_template_directory_uri() ?>/assets/images/download-pink.png" class="mx-auto img-fluid">
@@ -112,7 +112,7 @@ get_header();
 
                 <section id="one-pager-section" class="bg-rdp-main ignore-gutters py-5">
                     <div class="row justify-content-center text-white">
-                        <div class="col-8 rdp-container">
+                        <div class="col-10 col-md-8 rdp-container">
                             <div class="animate__animated" data-animation="fadeInUp">
                                 <h2 class="font-satoshi-black fs-39 mb-3">Como medir o impacto?</h2>
                                 <p class="fs-18"><span class="text-uppercase fw-bold">O desafio metodológico</span> desse projeto foi gerar informações que permitissem indicar como os capitais (natural, humano, social e produtivo) se transformam diante da recuperação de pastagens degradadas no Brasil e quais os impactos gerados por essas mudanças. A solução foi atuar em quatro frentes (Modelagem EGC, Modelagem Espacial, Modelagem Biofísica e Análise Multicriterial) a partir de uma análise espacial abrangente de diferentes cenários futuros para discutir os impactos econômicos, sociais e ambientais da recuperação de 30 milhões de hectares de pastagens degradadas, meta do Plano ABC+ até 2030.</p>
@@ -155,13 +155,13 @@ get_header();
                     <div class="row justify-content-center">
                         <div class="col-8 rdp-container">
                             <div class="row">
-                                <div class="col-4 animate__animated" data-animation="fadeInLeft">
+                                <div class="col-lg-4 animate__animated" data-animation="fadeInLeft">
                                     <h3 class="font-satoshi-black fs-17 text-uppercase text-rdp-green icon-title">
                                         <img src="<?php echo get_template_directory_uri() ?>/assets/images/icone-rpd.png">
                                         Cenário 1 <br>RPD</h3>
                                     <p class="fs-18 text-rdp-green">Recuperação de pastagens degradadas é um processo direto de recuperação de pastagens por meio da aplicação de diferentes práticas, como a melhoria da cobertura do solo e das plantas forrageiras existentes nas pastagens com técnicas de manejo e fertilização, ou o completo restabelecimento de uma área através de revolvimento do solo, correção química e semeadura.</p>
                                 </div>
-                                <div class="col-8 text-center animate__animated" data-animation="fadeInRight">
+                                <div class="col-lg-8 text-center animate__animated" data-animation="fadeInRight">
                                     <img style="max-height: 400px;" src="<?php echo get_template_directory_uri() ?>/assets/images/image-4.png" class="mx-auto img-fluid">
                                 </div>
                             </div>
@@ -173,17 +173,17 @@ get_header();
                     <div class="row justify-content-center">
                         <div class="col-10 rdp-container">
                             <div class="row">
-                                <div class="col-4 animate__animated" data-animation="fadeInLeft">
+                                <div class="col-lg-4 animate__animated" data-animation="fadeInLeft">
                                     <h3 class="font-satoshi-black fs-17 text-uppercase text-rdp-red icon-title">
                                         <img src="<?php echo get_template_directory_uri() ?>/assets/images/icone-ilp.png">
                                         Cenário 2 <br>RPD+iLP</h3>
                                     <p class="fs-18 text-rdp-red">Integração lavoura-pecuária é uma forma indireta de recuperação de pastagens que alterna a própria pastagem com culturas temporárias, como milho ou soja. A distribuição da cultura agrícolas foi estimada conforme sua participação regional.</p>
                                 </div>
-                                <div class="col-4 text-center animate__animated" data-animation="fadeInRight">
+                                <div class="col-lg-4 text-center animate__animated" data-animation="fadeInRight">
                                     <h3 class="font-satoshi-black fs-17 text-uppercase">Sistema Lavoura-pecuária</h3>
                                     <img src="<?php echo get_template_directory_uri() ?>/assets/images/sistema-lavoura-pecuaria.png" class="img-fluid">
                                 </div>
-                                <div class="col-4 text-center animate__animated animate__delay-300ms" data-animation="fadeInRight">
+                                <div class="col-lg-4 text-center animate__animated animate__delay-300ms" data-animation="fadeInRight">
                                     <h3 class="font-satoshi-black fs-17 text-uppercase">Alocação Geográfica</h3>
                                     <img src="<?php echo get_template_directory_uri() ?>/assets/images/alocacao-geo.png" class="img-fluid">
                                 </div>
@@ -201,229 +201,7 @@ get_header();
                             </div>
 
                             <div class="d-flex justify-content-center animate__animated" data-animation="fadeInRight">
-                                <div class="results-hive">
-                                    <div class="line-1 mb-3 d-flex justify-content-end align-items-center flex-column flex-xl-row">
-                                        <div class="result me-3">
-                                            <div class="content">
-                                                <div class="front">
-                                                    <div class="hexagon">
-                                                        <span>Produtividade</span>
-                                                    </div>
-                                                </div>
-                                                <div class="back">
-                                                    <div class="hexagon">
-                                                        <span>RPD: até +4,9% ao ano na produtividade média da pecuária</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="result me-3">
-                                            <div class="content">
-                                                <div class="front">
-                                                    <div class="hexagon">
-                                                        <span>Produção de alimentos</span>
-                                                    </div>
-                                                </div>
-                                                <div class="back">
-                                                    <div class="hexagon">
-                                                        <span>RPD: +38,9% na pecuária de corte e +15,2% na pecuária de leite.</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="result mx-5">
-                                            <div class="content">
-                                                <div class="front">
-                                                    <div class="hexagon bg-rdp-pink">
-                                                        <span>Acesso aos alimentos</span>
-                                                    </div>
-                                                </div>
-                                                <div class="back">
-                                                    <div class="hexagon bg-rdp-pink">
-                                                        <span>Alimentos até 1,38% mais baratos para famílias de menor renda.</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="result ms-3">
-                                            <div class="content">
-                                                <div class="front">
-                                                    <div class="hexagon bg-rdp-green-water">
-                                                        <span>Erosão do solo</span>
-                                                    </div>
-                                                </div>
-                                                <div class="back">
-                                                    <div class="hexagon bg-rdp-green-water">
-                                                        <span>Redução das taxas de erosão: 2,26% (RPD) e 1,94% (RPD+iLP).</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="result ms-3">
-                                            <div class="content">
-                                                <div class="front">
-                                                    <div class="hexagon bg-rdp-green-water">
-                                                        <span>Manutenção de habitats</span>
-                                                    </div>
-                                                </div>
-                                                <div class="back">
-                                                    <div class="hexagon bg-rdp-green-water">
-                                                        <span>De modo geral, há melhoria quantitativa, mas dependendo da região não há melhoria qualitativa.</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="line-2 mb-3 d-flex justify-content-end align-items-center flex-column flex-md-row">
-                                        <div class="result bigger me-3">
-                                            <div class="content">
-                                                <div class="front">
-                                                    <div class="hexagon with-icon">
-                                                        <span class="title">Econômicos</span>
-                                                        <img src="<?php echo get_template_directory_uri() ?>/assets/images/icone-economico.png">
-                                                    </div>
-                                                </div>
-                                                <div class="back">
-                                                    <div class="hexagon">
-                                                        <span>Uma resposta inteligente</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="result me-3">
-                                            <div class="content">
-                                                <div class="front">
-                                                    <div class="hexagon">
-                                                        <span>PIB</span>
-                                                    </div>
-                                                </div>
-                                                <div class="back">
-                                                    <div class="hexagon">
-                                                        <span>Alta no PIB real acumulado RPD: R$ 165bi / RPD+iLP: R$ 202bi.</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="result bigger me-3">
-                                            <div class="content">
-                                                <div class="front">
-                                                    <div class="hexagon bg-rdp-pink with-icon">
-                                                        <span class="title">Sociais</span>
-                                                        <img src="<?php echo get_template_directory_uri() ?>/assets/images/icone-social.png">
-                                                    </div>
-                                                </div>
-                                                <div class="back">
-                                                    <div class="hexagon bg-rdp-pink">
-                                                        <span>Uma resposta inteligente</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="result bigger me-3">
-                                            <div class="content">
-                                                <div class="front">
-                                                    <div class="hexagon bg-rdp-green-water with-icon">
-                                                        <span class="title">Ambientais</span>
-                                                        <img src="<?php echo get_template_directory_uri() ?>/assets/images/icone-ambiental.png">
-                                                    </div>
-                                                </div>
-                                                <div class="back">
-                                                    <div class="hexagon bg-rdp-green-water">
-                                                        <span>Uma resposta inteligente</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="result me-3-alt">
-                                            <div class="content">
-                                                <div class="front">
-                                                    <div class="hexagon bg-rdp-green-water">
-                                                        <span>Emissões e sequestro de carbono</span>
-                                                    </div>
-                                                </div>
-                                                <div class="back">
-                                                    <div class="hexagon bg-rdp-green-water">
-                                                        <span>RPD: -28,8% em emissões da pecuária de corte, se considerada a fixação de carbono no solo</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="line-3 mb-3 d-flex justify-content-end align-items-center flex-column flex-md-row">
-                                        <div class="result me-3">
-                                            <div class="content">
-                                                <div class="front">
-                                                    <div class="hexagon">
-                                                        <span>Balança comercial</span>
-                                                    </div>
-                                                </div>
-                                                <div class="back">
-                                                    <div class="hexagon">
-                                                        <span>Tendência de queda nas exportações devido a mais consumo doméstico, exceto para pecuária bovina, soja e milho.</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="result me-3">
-                                            <div class="content">
-                                                <div class="front">
-                                                    <div class="hexagon bg-rdp-pink">
-                                                        <span>Renda</span>
-                                                    </div>
-                                                </div>
-                                                <div class="back">
-                                                    <div class="hexagon bg-rdp-pink">
-                                                        <span>Aumento no salário real de todas as classes de trabalhadores.</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="result mx-5">
-                                            <div class="content">
-                                                <div class="front">
-                                                    <div class="hexagon bg-rdp-pink">
-                                                        <span>Mercado de trabalho</span>
-                                                    </div>
-                                                </div>
-                                                <div class="back">
-                                                    <div class="hexagon bg-rdp-pink">
-                                                        <span>RPD: redução da demanda laboral nas pecuárias de corte (-6,9%) e de leite (-30%).</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="result ms-3">
-                                            <div class="content">
-                                                <div class="front">
-                                                    <div class="hexagon bg-rdp-green-water">
-                                                        <span>Mudança de uso de terra</span>
-                                                    </div>
-                                                </div>
-                                                <div class="back">
-                                                    <div class="hexagon bg-rdp-green-water">
-                                                        <span>Maior área de vegetação nativa e menores áreas de pastagem e agricultura em relação à linha de base</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="result ms-3">
-                                            <div class="content">
-                                                <div class="front">
-                                                    <div class="hexagon bg-rdp-green-water">
-                                                        <span>Desmatamento</span>
-                                                    </div>
-                                                </div>
-                                                <div class="back">
-                                                    <div class="hexagon bg-rdp-green-water">
-                                                        <span>Desmatamento evitado: 6,2Mha (RPD) e 7,2 Mha (RPD+iLP) em relação à linha de base.</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                <?php get_template_part('template-parts/results-hive'); ?>
                             </div>
                         </div>
                     </div>
@@ -439,7 +217,7 @@ get_header();
                                     </h2>
                                 </div>
 
-                                <div class="col-5 animate__animated" data-animation="fadeInLeft">
+                                <div class="col-lg-5 animate__animated" data-animation="fadeInLeft">
                                     <div class="mb-4">
                                         <h3 class="font-satoshi-black fs-28 text-rdp-purple text-uppercase">Crescimento do PIB</h3>
                                         <h3 class="font-satoshi-black fs-40">R$13 bilhões</h3>
@@ -468,7 +246,7 @@ get_header();
                                     <h3 class="font-satoshi-black fs-28 text-uppercase">PIB cresce em todas as regiões</h3>
                                     <p class="fs-18">Estados em que a pecuária tem maior participação se destacam. Economias menos desenvolvidas apresentariam maior crescimento no PIB real. Clique no mapa e veja o crescimento do PIB por estado em cada cenário.</p>
                                 </div>
-                                <div class="col-7 animate__animated" data-animation="fadeInRight">
+                                <div class="col-lg-7 animate__animated" data-animation="fadeInRight">
                                     <div class="flourish-embed flourish-map" data-src="visualisation/15056761">
                                         <script src="https://public.flourish.studio/resources/embed.js"></script>
                                     </div>
@@ -641,7 +419,7 @@ get_header();
 
                         <div class="col-10 rdp-container">
                             <div class="row">
-                                <div class="col-4 animate__animated" data-animation="fadeInRight">
+                                <div class="col-lg-4 animate__animated" data-animation="fadeInRight">
                                     <h3 class="font-satoshi-black fs-19 text-uppercase mt-0 mb-2">Linha de base</h3>
                                     <div class="table-responsive">
                                         <table class="table table-rdp table-baseline table-borderless table-hover mb-5">
@@ -672,7 +450,7 @@ get_header();
                                         </table>
                                     </div>
                                 </div>
-                                <div class="col-4 animate__animated animate__delay-150ms" data-animation="fadeInRight">
+                                <div class="col-lg-4 animate__animated animate__delay-150ms" data-animation="fadeInRight">
                                     <h3 class="font-satoshi-black fs-19 text-uppercase mt-0 mb-2 text-rdp-green">Cenário 1 - RPD</h3>
                                     <div class="table-responsive">
                                         <table class="table table-rdp table-baseline table-borderless table-hover mb-5">
@@ -703,7 +481,7 @@ get_header();
                                         </table>
                                     </div>
                                 </div>
-                                <div class="col-4 animate__animated animate__delay-300ms" data-animation="fadeInRight">
+                                <div class="col-lg-4 animate__animated animate__delay-300ms" data-animation="fadeInRight">
                                     <h3 class="font-satoshi-black fs-19 mt-0 mb-2 text-rdp-red">CENÁRIO 2 - RPD+iLP</h3>
                                     <div class="table-responsive">
                                         <table class="table table-rdp table-baseline table-borderless table-hover mb-5">
@@ -807,11 +585,11 @@ get_header();
                             </div>
 
                             <div class="row align-items-end mb-5">
-                                <div class="col-5 animate__animated" data-animation="fadeInLeft">
+                                <div class="col-lg-5 animate__animated" data-animation="fadeInLeft">
                                     <img src="<?php echo get_template_directory_uri() ?>/assets/images/erosao.png" class="img-fluid">
                                 </div>
 
-                                <div class="col-7 animate__animated animate__delay-300ms" data-animation="fadeInRight">
+                                <div class="col-lg-7 animate__animated animate__delay-300ms" data-animation="fadeInRight">
                                     <h3 class="font-satoshi-black fs-19 text-rdp-green-water text-uppercase">Erosão do solo</h3>
                                     <p class="fs-18 text-rdp-green-water"><span class="text-uppercase fw-bold">Ambos os cenários (RPD e RPD+iLP)</span> contribuiriam para a redução das taxas de erosão dos solos. De modo geral, as reduções médias de perda do solo para o território brasileiro seriam de 2,26% para o cenário de RPD e 1,94% para o cenário de RPD+iLP. Isso porque o arranjo temporal da integração lavoura-pecuária pode comprometer parcialmente a capacidade de proteção do solo quando a agricultura se torna presente no local.
                                     </p>
@@ -819,13 +597,13 @@ get_header();
                             </div>
 
                             <div class="row align-items-center">
-                                <div class="col-7 animate__animated animate__delay-300ms" data-animation="fadeInLeft">
+                                <div class="col-lg-7 animate__animated animate__delay-300ms" data-animation="fadeInLeft">
                                     <h3 class="font-satoshi-black fs-19 text-rdp-green-water text-uppercase">Manutenção de Habitats</h3>
                                     <p class="fs-18 text-rdp-green-water"><span class="text-uppercase fw-bold">Habitats fornecem importantes serviços ecossistêmicos</span> e permitem a conservação da biodiversidade. Para mensurar a manutenção desses espaços, foram medidos, além da área de cobertura de vegetação nativa, parâmetros como o tamanho dos fragmentos com capacidade de conservação da biodiversidade, a área núcleo dos fragmentos e a conectividade funcional dos mesmos. No geral, nos dois cenários (RPD e RPD+iLP), haveria, em relação à linha de base, aumento da área de cobertura vegetal nativa, inclusive nos estados com os maiores rebanhos bovinos; no entanto, na maioria dos estados não haveria melhoria nos demais indicadores, resultando em evolução quantitativa, mas não qualitativa para a manutenção dos habitats. Por isso, políticas públicas complementares poderiam ser implementadas visando restaurar a vegetação e garantir a conectividade funcional dos remanescentes de vegetação
                                         nativa, através de corredores ecológicos, e a manutenção de áreas nucleares, a fim de diminuir os efeitos de borda nos fragmentos.</p>
                                 </div>
 
-                                <div class="col-5 animate__animated" data-animation="fadeInRight">
+                                <div class="col-lg-5 animate__animated" data-animation="fadeInRight">
                                     <img src="<?php echo get_template_directory_uri() ?>/assets/images/habitats.png" class="img-fluid">
                                 </div>
                             </div>
@@ -837,7 +615,7 @@ get_header();
                     <div class="row justify-content-center">
                         <div class="col-10 rdp-container mb-5">
                             <h2 class="font-satoshi-black fs-28 text-uppercase">Equipe técnica</h2>
-                            <div class="d-flex justify-content-start">
+                            <div class="d-flex flex-column flex-md-row justify-content-start">
                                 <ul class="list-group list-group-flush me-5">
                                     <li class="list-group-item ps-0 border-0">Joaquim Bento de Souza Ferreira F.</li>
                                     <li class="list-group-item ps-0 border-0">Alberto G. O. P. Barretto</li>
@@ -886,9 +664,9 @@ get_header();
                         </div>
                     </div>
                 </section>
-
             </div>
-            <div class="d-none d-md-flex col-2 align-items-stretch bg-rdp-secondary">
+
+            <div id="sidebar-container" class="d-block d-lg-flex col-2 align-items-stretch bg-rdp-secondary">
                 <?php get_sidebar(); ?>
             </div>
         </div>
