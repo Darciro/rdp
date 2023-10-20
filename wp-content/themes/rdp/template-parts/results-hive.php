@@ -1,6 +1,6 @@
 <div class="results-hive">
     <div class="line-1 mb-3 d-flex justify-content-end align-items-center flex-column flex-xl-row">
-        <div class="result me-xl-3">
+        <div class="result economic me-xl-3">
             <div class="content">
                 <div class="front">
                     <div class="hexagon">
@@ -14,7 +14,7 @@
                 </div>
             </div>
         </div>
-        <div class="result me-xl-3">
+        <div class="result economic me-xl-3">
             <div class="content">
                 <div class="front">
                     <div class="hexagon">
@@ -28,7 +28,7 @@
                 </div>
             </div>
         </div>
-        <div class="result mx-xl-5">
+        <div class="result social mx-xl-5">
             <div class="content">
                 <div class="front">
                     <div class="hexagon bg-rdp-pink">
@@ -42,7 +42,7 @@
                 </div>
             </div>
         </div>
-        <div class="result ms-xl-3">
+        <div class="result environmental ms-xl-3">
             <div class="content">
                 <div class="front">
                     <div class="hexagon bg-rdp-green-water">
@@ -56,7 +56,7 @@
                 </div>
             </div>
         </div>
-        <div class="result ms-xl-3">
+        <div class="result environmental ms-xl-3">
             <div class="content">
                 <div class="front">
                     <div class="hexagon bg-rdp-green-water">
@@ -73,7 +73,7 @@
     </div>
 
     <div class="line-2 mb-3 d-flex justify-content-end align-items-center flex-column flex-xl-row">
-        <div class="result bigger me-xl-3">
+        <div class="result bigger me-xl-3 economic" data-result-type="economic">
             <div class="content">
                 <div class="front">
                     <div class="hexagon with-icon">
@@ -88,7 +88,7 @@
                 </div>
             </div>
         </div>
-        <div class="result me-xl-3">
+        <div class="result economic me-xl-3">
             <div class="content">
                 <div class="front">
                     <div class="hexagon">
@@ -102,7 +102,7 @@
                 </div>
             </div>
         </div>
-        <div class="result bigger me-xl-3">
+        <div class="result bigger me-xl-3 social" data-result-type="social">
             <div class="content">
                 <div class="front">
                     <div class="hexagon bg-rdp-pink with-icon">
@@ -117,7 +117,7 @@
                 </div>
             </div>
         </div>
-        <div class="result bigger me-xl-3">
+        <div class="result bigger me-xl-3 environmental" data-result-type="environmental">
             <div class="content">
                 <div class="front">
                     <div class="hexagon bg-rdp-green-water with-icon">
@@ -132,7 +132,7 @@
                 </div>
             </div>
         </div>
-        <div class="result me-xl-3-alt">
+        <div class="result environmental me-3-alt">
             <div class="content">
                 <div class="front">
                     <div class="hexagon bg-rdp-green-water">
@@ -149,7 +149,7 @@
     </div>
 
     <div class="line-3 mb-3 d-flex justify-content-end align-items-center flex-column flex-xl-row">
-        <div class="result me-xl-3">
+        <div class="result economic me-xl-3">
             <div class="content">
                 <div class="front">
                     <div class="hexagon">
@@ -163,7 +163,7 @@
                 </div>
             </div>
         </div>
-        <div class="result me-xl-3">
+        <div class="result social me-xl-3">
             <div class="content">
                 <div class="front">
                     <div class="hexagon bg-rdp-pink">
@@ -177,7 +177,7 @@
                 </div>
             </div>
         </div>
-        <div class="result mx-xl-5">
+        <div class="result social mx-xl-5">
             <div class="content">
                 <div class="front">
                     <div class="hexagon bg-rdp-pink">
@@ -191,7 +191,7 @@
                 </div>
             </div>
         </div>
-        <div class="result ms-xl-3">
+        <div class="result environmental ms-xl-3">
             <div class="content">
                 <div class="front">
                     <div class="hexagon bg-rdp-green-water">
@@ -205,7 +205,7 @@
                 </div>
             </div>
         </div>
-        <div class="result ms-xl-3">
+        <div class="result environmental ms-xl-3">
             <div class="content">
                 <div class="front">
                     <div class="hexagon bg-rdp-green-water">

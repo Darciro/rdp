@@ -19,10 +19,10 @@ get_header();
             <div class="col-12 col-lg-10">
 
                 <section id="intro" class="text-white ignore-gutters bg-rdp-main vh-100">
-                    <div class="row justify-content-center">
-                        <div class="col-9 pt-5 px-5 text-center">
-                            <h1 class="text-center mt-5 font-satoshi-black fs-40 px-3 animate__animated animate__delay-1s" data-animation="fadeInUp">Qual o impacto da meta de recuperação de pastagens degradadas do Plano ABC+ no Brasil?</h1>
-                            <p class="fs-18 animate__animated animate__delay-2s" data-animation="fadeInUp">Aumento do PIB brasileiro, ampliação da renda e do consumo, redução nas emissões de gases de efeito estufa e controle do desmatamento. Esses resultados positivos dão dimensão do impacto que a recuperação de pastagens degradadas (RPD), no âmbito do Plano ABC+, pode trazer para o Brasil até 2030.</p>
+                    <div class="row align-items-center align-items-lg-start justify-content-center vh-100">
+                        <div class="col-lg-9 pt-5 pb-5 pb-lg-0 px-5 text-center">
+                            <h1 class="text-center mt-lg-5 mb-5 mb-lg-0 font-satoshi-black fs-40 fs-sm-28 px-3 animate__animated animate__delay-1s" data-animation="fadeInUp">Qual o impacto da meta de recuperação de pastagens degradadas do Plano ABC+ no Brasil?</h1>
+                            <p class="fs-18 fs-sm-16 animate__animated animate__delay-2s" data-animation="fadeInUp">Aumento do PIB brasileiro, ampliação da renda e do consumo, redução nas emissões de gases de efeito estufa e controle do desmatamento. Esses resultados positivos dão dimensão do impacto que a recuperação de pastagens degradadas (RPD), no âmbito do Plano ABC+, pode trazer para o Brasil até 2030.</p>
                         </div>
                     </div>
                 </section>
@@ -81,18 +81,18 @@ get_header();
                 </section>
 
                 <section id="complete-results" class="ignore-gutters pt-5 bg-rdp-pink">
-                    <h2 class="font-satoshi-black fs-28 text-uppercase text-center text-white mb-3 mt-5 animate__animated" data-animation="fadeInUp">Acesse os resultados completos</h2>
+                    <h2 class="font-satoshi-black fs-28 fs-sm-24 text-uppercase text-center text-white mb-5 mb-md-3 mt-md-5 animate__animated" data-animation="fadeInUp">Acesse os resultados completos</h2>
                     <div class="d-flex flex-column flex-md-row justify-content-center align-items-center">
                         <div class="rounded-download-btn-wrapper mx-5">
                             <a href="#" class="rounded-download-btn animate__animated" data-animation="fadeIn">
                                 <img src="<?php echo get_template_directory_uri() ?>/assets/images/download-pink.png" class="mx-auto img-fluid">
-                                <span class="font-satoshi-black fs-18 text-uppercase">Sumário executivo</span>
+                                <span class="font-satoshi-black fs-18 fs-sm-16 text-uppercase">Sumário executivo</span>
                             </a>
                         </div>
-                        <div class="rounded-download-btn-wrapper mx-5">
+                        <div class="rounded-download-btn-wrapper my-3 my-md-0 mx-5">
                             <a href="#" class="rounded-download-btn animate__animated" data-animation="fadeIn">
                                 <img src="<?php echo get_template_directory_uri() ?>/assets/images/download-pink.png" class="mx-auto img-fluid">
-                                <span class="font-satoshi-black fs-18 text-uppercase">Relatório completo</span>
+                                <span class="font-satoshi-black fs-18 fs-sm-16 text-uppercase">Relatório completo</span>
                             </a>
                         </div>
                     </div>
@@ -101,7 +101,7 @@ get_header();
                 <section id="impacts" class="py-5">
                     <div class="row justify-content-center">
                         <div class="col-10 rdp-container animate__animated" data-animation="fadeInUp">
-                            <p class="fs-18"><span class="text-uppercase fw-bold">30 milhões de hectares de pastagens degradadas.</span> Esse é o tamanho da área que o Plano ABC+ (Plano Setorial de Mitigação e de Adaptação às Mudanças Climáticas para a Consolidação de uma Economia de Baixa Emissão de Carbono na Agricultura 2020-2030) pretende recuperar até 2030 no Brasil. O TEEBAgriFood, por meio de uma parceria entre o Programa das Nações Unidas para o Meio Ambiente (PNUMA) e o Grupo de Políticas Públicas da Esalq/USP, buscou entender o impacto dessa política, considerando as interações entre sociedade, economia e natureza. Para isso, avaliou dois cenários até 2030: um com adoção de tecnologias convencionais para RPD e outro que, além da RPD convencional, adota em parte da área a integração lavoura-pecuária (iLP). Ambos os cenários foram comparados a uma linha de base - ou business as usual (BAU) - isto é, uma projeção que considera a não aplicação da política. Trazemos a
+                            <p class="fs-18 fs-sm-16"><span class="text-uppercase fw-bold">30 milhões de hectares de pastagens degradadas.</span> Esse é o tamanho da área que o Plano ABC+ (Plano Setorial de Mitigação e de Adaptação às Mudanças Climáticas para a Consolidação de uma Economia de Baixa Emissão de Carbono na Agricultura 2020-2030) pretende recuperar até 2030 no Brasil. O TEEBAgriFood, por meio de uma parceria entre o Programa das Nações Unidas para o Meio Ambiente (PNUMA) e o Grupo de Políticas Públicas da Esalq/USP, buscou entender o impacto dessa política, considerando as interações entre sociedade, economia e natureza. Para isso, avaliou dois cenários até 2030: um com adoção de tecnologias convencionais para RPD e outro que, além da RPD convencional, adota em parte da área a integração lavoura-pecuária (iLP). Ambos os cenários foram comparados a uma linha de base - ou business as usual (BAU) - isto é, uma projeção que considera a não aplicação da política. Trazemos a
                                 seguir os principais dados do estudo e convidamos você a se aprofundar nos conteúdos e navegar pelos mapas interativos, clicando ao lado.</p>
                             <div class="text-center">
                                 <img src="<?php echo get_template_directory_uri() ?>/assets/images/image-1.png" class="mx-auto img-fluid">
@@ -112,10 +112,10 @@ get_header();
 
                 <section id="one-pager-section" class="bg-rdp-main ignore-gutters py-5">
                     <div class="row justify-content-center text-white">
-                        <div class="col-10 col-md-8 rdp-container">
+                        <div class="col-10 col-md-8 rdp-container text-center text-lg-start">
                             <div class="animate__animated" data-animation="fadeInUp">
-                                <h2 class="font-satoshi-black fs-39 mb-3">Como medir o impacto?</h2>
-                                <p class="fs-18"><span class="text-uppercase fw-bold">O desafio metodológico</span> desse projeto foi gerar informações que permitissem indicar como os capitais (natural, humano, social e produtivo) se transformam diante da recuperação de pastagens degradadas no Brasil e quais os impactos gerados por essas mudanças. A solução foi atuar em quatro frentes (Modelagem EGC, Modelagem Espacial, Modelagem Biofísica e Análise Multicriterial) a partir de uma análise espacial abrangente de diferentes cenários futuros para discutir os impactos econômicos, sociais e ambientais da recuperação de 30 milhões de hectares de pastagens degradadas, meta do Plano ABC+ até 2030.</p>
+                                <h2 class="font-satoshi-black fs-39 fs-sm-28 mb-3">Como medir o impacto?</h2>
+                                <p class="fs-18 fs-sm-16"><span class="text-uppercase fw-bold">O desafio metodológico</span> desse projeto foi gerar informações que permitissem indicar como os capitais (natural, humano, social e produtivo) se transformam diante da recuperação de pastagens degradadas no Brasil e quais os impactos gerados por essas mudanças. A solução foi atuar em quatro frentes (Modelagem EGC, Modelagem Espacial, Modelagem Biofísica e Análise Multicriterial) a partir de uma análise espacial abrangente de diferentes cenários futuros para discutir os impactos econômicos, sociais e ambientais da recuperação de 30 milhões de hectares de pastagens degradadas, meta do Plano ABC+ até 2030.</p>
                             </div>
                             <div class="rounded-download-btn-wrapper">
                                 <a href="#" class="rounded-download-btn animate__animated" data-animation="fadeIn">
@@ -131,20 +131,20 @@ get_header();
                     <div class="row justify-content-center mt-5">
                         <div class="col-10 rdp-container">
                             <div class="text-center animate__animated" data-animation="fadeInUp">
-                                <h2 class="text-center font-satoshi-black fs-39 mb-3">Qual o tamanho da área degradada?</h2>
-                                <p class="fs-18"><span class="text-uppercase fw-bold">Ao todo, são 102,8 milhões de hectares</span> de pastagem degradadas no Brasil (incluindo pastagens com degradação intermediária ou severa, segundo classificação do LAPIG, de 2020). Para termos noção, a área corresponde a pouco mais de 8% do território nacional: é uma extensa área de pastos com poucos nutrientes ou erodidos, com tamanho superior ao Chile e Uruguai somados. Ou ainda: é quatro vezes o tamanho do estado de São Paulo. As pastagens degradadas estão concentradas principalmente (51,3%) nos estados de Mato Grosso, Mato Grosso do Sul, Minas Gerais e Bahia.</p>
+                                <h2 class="text-center font-satoshi-black fs-39 fs-sm-28 mb-3">Qual o tamanho da área degradada?</h2>
+                                <p class="fs-18 fs-sm-16"><span class="text-uppercase fw-bold">Ao todo, são 102,8 milhões de hectares</span> de pastagem degradadas no Brasil (incluindo pastagens com degradação intermediária ou severa, segundo classificação do LAPIG, de 2020). Para termos noção, a área corresponde a pouco mais de 8% do território nacional: é uma extensa área de pastos com poucos nutrientes ou erodidos, com tamanho superior ao Chile e Uruguai somados. Ou ainda: é quatro vezes o tamanho do estado de São Paulo. As pastagens degradadas estão concentradas principalmente (51,3%) nos estados de Mato Grosso, Mato Grosso do Sul, Minas Gerais e Bahia.</p>
                             </div>
                             <div class="text-center">
                                 <img src="<?php echo get_template_directory_uri() ?>/assets/images/mapa102milhões.png" class="mx-auto img-fluid">
                             </div>
                             <div class="mt-5">
-                                <h2 class="font-satoshi-black fs-39 mb-3 animate__animated" data-animation="fadeInUp">Área degradada por tamanho de propriedade e região</h2>
+                                <h2 class="font-satoshi-black fs-17 text-uppercase mb-3 animate__animated" data-animation="fadeInUp">Área degradada por tamanho de propriedade e região</h2>
                                 <div class="flourish-embed flourish-hierarchy" data-src="visualisation/15056138">
                                     <script src="https://public.flourish.studio/resources/embed.js"></script>
                                 </div>
                             </div>
                             <div class="mt-5 animate__animated" data-animation="fadeInUp">
-                                <h2 class="font-satoshi-black fs-39 mb-3">Distribuição das áreas a serem recuperadas com RPD e RPD+iLP</h2>
+                                <h2 class="font-satoshi-black fs-17 text-uppercase mb-3">Distribuição das áreas a serem recuperadas com RPD e RPD+iLP</h2>
                                 <img src="<?php echo get_template_directory_uri() ?>/assets/images/image-3.png" class="mx-auto img-fluid">
                             </div>
                         </div>
@@ -159,7 +159,7 @@ get_header();
                                     <h3 class="font-satoshi-black fs-17 text-uppercase text-rdp-green icon-title">
                                         <img src="<?php echo get_template_directory_uri() ?>/assets/images/icone-rpd.png">
                                         Cenário 1 <br>RPD</h3>
-                                    <p class="fs-18 text-rdp-green">Recuperação de pastagens degradadas é um processo direto de recuperação de pastagens por meio da aplicação de diferentes práticas, como a melhoria da cobertura do solo e das plantas forrageiras existentes nas pastagens com técnicas de manejo e fertilização, ou o completo restabelecimento de uma área através de revolvimento do solo, correção química e semeadura.</p>
+                                    <p class="fs-18 fs-sm-16 text-rdp-green">Recuperação de pastagens degradadas é um processo direto de recuperação de pastagens por meio da aplicação de diferentes práticas, como a melhoria da cobertura do solo e das plantas forrageiras existentes nas pastagens com técnicas de manejo e fertilização, ou o completo restabelecimento de uma área através de revolvimento do solo, correção química e semeadura.</p>
                                 </div>
                                 <div class="col-lg-8 text-center animate__animated" data-animation="fadeInRight">
                                     <img style="max-height: 400px;" src="<?php echo get_template_directory_uri() ?>/assets/images/image-4.png" class="mx-auto img-fluid">
@@ -173,13 +173,13 @@ get_header();
                     <div class="row justify-content-center">
                         <div class="col-10 rdp-container">
                             <div class="row">
-                                <div class="col-lg-4 animate__animated" data-animation="fadeInLeft">
+                                <div class="col-lg-4 mb-3 mb-lg-0 animate__animated" data-animation="fadeInLeft">
                                     <h3 class="font-satoshi-black fs-17 text-uppercase text-rdp-red icon-title">
                                         <img src="<?php echo get_template_directory_uri() ?>/assets/images/icone-ilp.png">
                                         Cenário 2 <br>RPD+iLP</h3>
-                                    <p class="fs-18 text-rdp-red">Integração lavoura-pecuária é uma forma indireta de recuperação de pastagens que alterna a própria pastagem com culturas temporárias, como milho ou soja. A distribuição da cultura agrícolas foi estimada conforme sua participação regional.</p>
+                                    <p class="fs-18 fs-sm-16 text-rdp-red">Integração lavoura-pecuária é uma forma indireta de recuperação de pastagens que alterna a própria pastagem com culturas temporárias, como milho ou soja. A distribuição da cultura agrícolas foi estimada conforme sua participação regional.</p>
                                 </div>
-                                <div class="col-lg-4 text-center animate__animated" data-animation="fadeInRight">
+                                <div class="col-lg-4 mb-5 mb-lg-0 text-center animate__animated" data-animation="fadeInRight">
                                     <h3 class="font-satoshi-black fs-17 text-uppercase">Sistema Lavoura-pecuária</h3>
                                     <img src="<?php echo get_template_directory_uri() ?>/assets/images/sistema-lavoura-pecuaria.png" class="img-fluid">
                                 </div>
@@ -196,7 +196,7 @@ get_header();
                     <div class="row">
                         <div class="col-12 text-center">
                             <div class="animate__animated" data-animation="fadeInUp">
-                                <h2 class="font-satoshi-black fs-39">Quais os resultados?</h2>
+                                <h2 class="font-satoshi-black fs-39 fs-sm-28">Quais os resultados?</h2>
                                 <p class="font-satoshi-black fs-16 text-uppercase">Escolha um resultado para saber mais</p>
                             </div>
 
@@ -219,16 +219,16 @@ get_header();
 
                                 <div class="col-lg-5 animate__animated" data-animation="fadeInLeft">
                                     <div class="mb-4">
-                                        <h3 class="font-satoshi-black fs-28 text-rdp-purple text-uppercase">Crescimento do PIB</h3>
-                                        <h3 class="font-satoshi-black fs-40">R$13 bilhões</h3>
+                                        <h3 class="font-satoshi-black fs-28 fs-sm-24 text-rdp-purple text-uppercase">Crescimento do PIB</h3>
+                                        <h3 class="font-satoshi-black fs-40 fs-sm-28">R$13 bilhões</h3>
                                         <p class="font-satoshi-black fs-16 m-0">de investimento (Plano ABC+)</p>
-                                        <p class="font-satoshi-black fs-28 m-0 text-uppercase">Gerariam:</p>
+                                        <p class="font-satoshi-black fs-16 m-0">Gerariam:</p>
                                     </div>
 
                                     <div class="d-flex justify-content-start mb-3">
                                         <img src="<?php echo get_template_directory_uri() ?>/assets/images/icone-rpd.png" class="pe-4 img-fluid" style="height: 80px; width: auto">
                                         <div>
-                                            <h3 class="font-satoshi-black fs-40 text-rdp-green mb-0">R$165 bilhões</h3>
+                                            <h3 class="font-satoshi-black fs-40 fs-sm-28 text-rdp-green mb-0">R$165 bilhões</h3>
                                             <p class="font-satoshi-black fs-16 m-0 text-rdp-green">de aumento acumulado (com RPD)</p>
                                         </div>
                                     </div>
@@ -236,15 +236,15 @@ get_header();
                                     <div class="d-flex justify-content-start mb-3">
                                         <img src="<?php echo get_template_directory_uri() ?>/assets/images/icone-ilp.png" class="pe-4 img-fluid" style="height: 80px; width: auto">
                                         <div>
-                                            <h3 class="font-satoshi-black fs-40 text-rdp-red mb-0">R$202 bilhões</h3>
+                                            <h3 class="font-satoshi-black fs-40 fs-sm-28 text-rdp-red mb-0">R$202 bilhões</h3>
                                             <p class="font-satoshi-black fs-16 m-0 text-rdp-red">de aumento acumulado (com RPD+iLP)</p>
                                         </div>
                                     </div>
 
-                                    <p class="mb-4 mb-0 fs-12">*Todos os valores estão corrigidos para 2023</p>
+                                    <p class="mb-5 mb-0 fs-12">*Todos os valores estão corrigidos para 2023</p>
 
-                                    <h3 class="font-satoshi-black fs-28 text-uppercase">PIB cresce em todas as regiões</h3>
-                                    <p class="fs-18">Estados em que a pecuária tem maior participação se destacam. Economias menos desenvolvidas apresentariam maior crescimento no PIB real. Clique no mapa e veja o crescimento do PIB por estado em cada cenário.</p>
+                                    <h3 class="font-satoshi-black fs-19 fs-sm-16 text-uppercase">PIB cresce em todas as regiões</h3>
+                                    <p class="fs-18 fs-sm-16">Estados em que a pecuária tem maior participação se destacam. Economias menos desenvolvidas apresentariam maior crescimento no PIB real. Clique no mapa e veja o crescimento do PIB por estado em cada cenário.</p>
                                 </div>
                                 <div class="col-lg-7 animate__animated" data-animation="fadeInRight">
                                     <div class="flourish-embed flourish-map" data-src="visualisation/15056761">
@@ -366,14 +366,14 @@ get_header();
 
                         <div class="col-10 rdp-container">
                             <div class="mb-5 animate__animated" data-animation="fadeInUp">
-                                <h3 class="font-satoshi-black fs-28 text-rdp-pink text-uppercase">Preços menores, salários maiores, mais consumo</h3>
-                                <p class="fs-18 text-rdp-pink"><span class="text-uppercase fw-bold">A maior disponibilidade</span> de produtos da pecuária bovina ocasionaria uma redução dos preços. Com o aumento da atividade econômica, haveria uma ampliação do salário real das famílias, especialmente para a mão de obra mais qualificada.
+                                <h3 class="font-satoshi-black fs-28 fs-sm-24 text-rdp-pink text-uppercase">Preços menores, salários maiores, mais consumo</h3>
+                                <p class="fs-18 fs-sm-16 text-rdp-pink"><span class="text-uppercase fw-bold">A maior disponibilidade</span> de produtos da pecuária bovina ocasionaria uma redução dos preços. Com o aumento da atividade econômica, haveria uma ampliação do salário real das famílias, especialmente para a mão de obra mais qualificada.
                                     Considerando somente o consumo de alimentos, ele aumentaria para todas as famílias. Entretanto, as famílias mais pobres teriam uma pequena redução no consumo geral. Na classe de trabalhadores mais pobres (POF1) haveria redução do consumo real nas regiões AM-AC-RR, PA-AP, PI-BA, MA-TO, Restante do Nordeste e MG. Para GO-DF isso ocorreria apenas no Cenário de RPD. Por isso, o estudo alerta para a necessidade de se implementar políticas públicas complementares para proporcionar ganhos a essas famílias.
                                 </p>
                             </div>
 
                             <div class="mb-5 animate__animated" data-animation="fadeInUp">
-                                <h3 class="font-satoshi-regular mb-3 fs-19 text-rdp-pink text-uppercase">Consumo geral das famílais</h3>
+                                <h3 class="font-satoshi-regular mb-3 fs-19 fs-sm-16 text-rdp-pink text-uppercase">Consumo geral das famílais</h3>
                                 <div class="flourish-embed flourish-chart" data-src="visualisation/15057234">
                                     <script src="https://public.flourish.studio/resources/embed.js"></script>
                                 </div>
@@ -384,14 +384,14 @@ get_header();
                             </div>
 
                             <div class="mb-5 animate__animated" data-animation="fadeInUp">
-                                <h3 class="font-satoshi-regular mb-3 fs-19 text-rdp-pink text-uppercase">Consumo de alimento das famílais</h3>
+                                <h3 class="font-satoshi-regular mb-3 fs-19 fs-sm-16 text-rdp-pink text-uppercase">Consumo de alimento das famílais</h3>
                                 <div class="flourish-embed flourish-chart" data-src="visualisation/15061458">
                                     <script src="https://public.flourish.studio/resources/embed.js"></script>
                                 </div>
                             </div>
 
                             <div class="mb-5 animate__animated" data-animation="fadeInUp">
-                                <h3 class="font-satoshi-regular mb-3 fs-19 text-rdp-pink text-uppercase">Variação dos salários</h3>
+                                <h3 class="font-satoshi-regular mb-3 fs-19 fs-sm-16 text-rdp-pink text-uppercase">Variação dos salários</h3>
                                 <div class="flourish-embed flourish-chart" data-src="visualisation/15061498">
                                     <script src="https://public.flourish.studio/resources/embed.js"></script>
                                 </div>
@@ -411,16 +411,57 @@ get_header();
 
                         <div class="col-10 rdp-container animate__animated" data-animation="fadeInUp">
                             <div class="mb-5">
-                                <h3 class="font-satoshi-black fs-28 text-rdp-green-water text-uppercase">Conversavação de vegetação nativa</h3>
-                                <p class="fs-18 text-rdp-green-water"><span class="text-uppercase fw-bold">O crescimento da produtividade</span> da pecuária bovina ampliaria a produção, reduzindo o preço dos produtos e impactando a rentabilidade do setor. Isso levaria a uma redução da demanda por áreas de pastagem em relação à linha de base, evitando desmatamento da vegetação nativa que ocorreria sem a aplicação da política e ampliando a área agrícola e as florestas plantadas. A RDP mostrou que tem potencial de promover um efeito “poupa-terra” em torno de 6,2 milhões de hectares em nível nacional. Esse efeito é ampliado no caso da RPD+iLP, podendo chegar a 7,2 milhões de hectares. Em alguns estados, porém, poderia haver “efeito-rebote”, em que o aumento da produtividade da pecuária estimularia o desmatamento. Vale ressaltar que os efeitos aqui descritos são sempre em relação à linha de base. Portanto, em todos os cenários haverá desmatamento até 2030, mas nos cenários RPD e RPD + iLP
+                                <h3 class="font-satoshi-black fs-28 fs-sm-24 text-rdp-green-water text-uppercase">Conservação de vegetação nativa</h3>
+                                <p class="fs-18 fs-sm-16 text-rdp-green-water"><span class="text-uppercase fw-bold">O crescimento da produtividade</span> da pecuária bovina ampliaria a produção, reduzindo o preço dos produtos e impactando a rentabilidade do setor. Isso levaria a uma redução da demanda por áreas de pastagem em relação à linha de base, evitando desmatamento da vegetação nativa que ocorreria sem a aplicação da política e ampliando a área agrícola e as florestas plantadas. A RDP mostrou que tem potencial de promover um efeito “poupa-terra” em torno de 6,2 milhões de hectares em nível nacional. Esse efeito é ampliado no caso da RPD+iLP, podendo chegar a 7,2 milhões de hectares. Em alguns estados, porém, poderia haver “efeito-rebote”, em que o aumento da produtividade da pecuária estimularia o desmatamento. Vale ressaltar que os efeitos aqui descritos são sempre em relação à linha de base. Portanto, em todos os cenários haverá desmatamento até 2030, mas nos cenários RPD e RPD + iLP
                                     esse desmatamento será menor do que na linha de base.</p>
                             </div>
                         </div>
 
                         <div class="col-10 rdp-container">
                             <div class="row">
+                                <div class="col-lg-6 mb-5 mb-lg-3 mb-lg-5">
+                                    <div class="environmental-compare me-lg-3">
+                                        <div class="environmental-compare-heading py-3">
+                                            <img src="<?php echo get_template_directory_uri() ?>/assets/images/icone-rpd.png" class="icon">
+                                            <h3 class="mt-0 mb-2 text-center">
+                                                <span class="d-block font-satoshi-black fs-19 fs-sm-16">LINHA DE BASE x</span>
+                                                <span class="d-block font-satoshi-black fs-19 fs-sm-16 text-rdp-green">CENÁRIO 1 - RPD</span>
+                                            </h3>
+                                        </div>
+                                        <div class="ba-slider base-line-1 mb-5">
+                                            <img src="<?php echo get_template_directory_uri() ?>/assets/images/mapabau.png" class="img-fluid">
+                                            <div class="resize">
+                                                <img src="<?php echo get_template_directory_uri() ?>/assets/images/mapacen1.png" class="img-fluid">
+                                            </div>
+                                            <span class="handle"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 mb-5 mb-lg-3 mb-lg-5">
+                                    <div class="environmental-compare ms-lg-3">
+                                        <div class="environmental-compare-heading py-3">
+                                            <img src="<?php echo get_template_directory_uri() ?>/assets/images/icone-ilp.png" class="icon">
+                                            <h3 class="font-satoshi-black fs-19 fs-sm-16 mt-0 mb-2 text-center">
+                                                <span class="d-block font-satoshi-black fs-19 fs-sm-16">LINHA DE BASE x</span>
+                                                <span class="d-block font-satoshi-black fs-19 fs-sm-16 text-rdp-red">CENÁRIO 2 - RPD+iLP</span>
+                                            </h3>
+                                        </div>
+                                        <div class="ba-slider base-line-2 mb-5">
+                                            <img src="<?php echo get_template_directory_uri() ?>/assets/images/mapabau.png" class="img-fluid">
+                                            <div class="resize">
+                                                <img src="<?php echo get_template_directory_uri() ?>/assets/images/mapacen2.png" class="img-fluid">
+                                            </div>
+                                            <span class="handle"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-10 rdp-container">
+                            <div class="row">
                                 <div class="col-lg-4 animate__animated" data-animation="fadeInRight">
-                                    <h3 class="font-satoshi-black fs-19 text-uppercase mt-0 mb-2">Linha de base</h3>
+                                    <h3 class="font-satoshi-black fs-19 fs-sm-16 text-uppercase mt-0 mb-2">Linha de base</h3>
                                     <div class="table-responsive">
                                         <table class="table table-rdp table-baseline table-borderless table-hover mb-5">
                                             <thead>
@@ -451,7 +492,7 @@ get_header();
                                     </div>
                                 </div>
                                 <div class="col-lg-4 animate__animated animate__delay-150ms" data-animation="fadeInRight">
-                                    <h3 class="font-satoshi-black fs-19 text-uppercase mt-0 mb-2 text-rdp-green">Cenário 1 - RPD</h3>
+                                    <h3 class="font-satoshi-black fs-19 fs-sm-16 text-uppercase mt-0 mb-2 text-rdp-green">Cenário 1 - RPD</h3>
                                     <div class="table-responsive">
                                         <table class="table table-rdp table-baseline table-borderless table-hover mb-5">
                                             <thead>
@@ -482,7 +523,7 @@ get_header();
                                     </div>
                                 </div>
                                 <div class="col-lg-4 animate__animated animate__delay-300ms" data-animation="fadeInRight">
-                                    <h3 class="font-satoshi-black fs-19 mt-0 mb-2 text-rdp-red">CENÁRIO 2 - RPD+iLP</h3>
+                                    <h3 class="font-satoshi-black fs-19 fs-sm-16 mt-0 mb-2 text-rdp-red">CENÁRIO 2 - RPD+iLP</h3>
                                     <div class="table-responsive">
                                         <table class="table table-rdp table-baseline table-borderless table-hover mb-5">
                                             <thead>
@@ -517,9 +558,9 @@ get_header();
 
                         <div class="col-10 rdp-container animate__animated" data-animation="fadeInUp">
                             <div class="mb-5">
-                                <h3 class="font-satoshi-black fs-19 text-rdp-green-water text-uppercase">Sequestro de carbono</h3>
-                                <p class="fs-18 text-rdp-green-water mb-5   ">É importante destacar que a fixação de carbono no solo e em pastagens de boa qualidade é capaz de compensar o aumento das emissões provocado pelo crescimento da pecuária.</p>
-                                <h3 class="font-satoshi-black fs-24 text-uppercase mt-0 mb-2 text-end">Percentual - CO2 equivalente</h3>
+                                <h3 class="font-satoshi-black fs-19 fs-sm-16 text-rdp-green-water text-uppercase">Sequestro de carbono</h3>
+                                <p class="fs-18 fs-sm-16 text-rdp-green-water mb-5">É importante destacar que a fixação de carbono no solo e em pastagens de boa qualidade é capaz de compensar o aumento das emissões provocado pelo crescimento da pecuária.</p>
+                                <h3 class="font-satoshi-black fs-24 fs-sm-18 text-uppercase mt-0 mb-2 text-end">Percentual - CO2 equivalente</h3>
                                 <div class="table-responsive">
                                     <table class="table table-rdp table-alt table-borderless table-hover mb-5">
                                         <thead>
@@ -586,25 +627,25 @@ get_header();
 
                             <div class="row align-items-end mb-5">
                                 <div class="col-lg-5 animate__animated" data-animation="fadeInLeft">
-                                    <img src="<?php echo get_template_directory_uri() ?>/assets/images/erosao.png" class="img-fluid">
+                                    <img src="<?php echo get_template_directory_uri() ?>/assets/images/erosao.png" class="img-fluid mb-5 mb-lg-0">
                                 </div>
 
                                 <div class="col-lg-7 animate__animated animate__delay-300ms" data-animation="fadeInRight">
-                                    <h3 class="font-satoshi-black fs-19 text-rdp-green-water text-uppercase">Erosão do solo</h3>
-                                    <p class="fs-18 text-rdp-green-water"><span class="text-uppercase fw-bold">Ambos os cenários (RPD e RPD+iLP)</span> contribuiriam para a redução das taxas de erosão dos solos. De modo geral, as reduções médias de perda do solo para o território brasileiro seriam de 2,26% para o cenário de RPD e 1,94% para o cenário de RPD+iLP. Isso porque o arranjo temporal da integração lavoura-pecuária pode comprometer parcialmente a capacidade de proteção do solo quando a agricultura se torna presente no local.
+                                    <h3 class="font-satoshi-black fs-19 fs-sm-16 text-rdp-green-water text-uppercase">Erosão do solo</h3>
+                                    <p class="fs-18 fs-sm-16 text-rdp-green-water"><span class="text-uppercase fw-bold">Ambos os cenários (RPD e RPD+iLP)</span> contribuiriam para a redução das taxas de erosão dos solos. De modo geral, as reduções médias de perda do solo para o território brasileiro seriam de 2,26% para o cenário de RPD e 1,94% para o cenário de RPD+iLP. Isso porque o arranjo temporal da integração lavoura-pecuária pode comprometer parcialmente a capacidade de proteção do solo quando a agricultura se torna presente no local.
                                     </p>
                                 </div>
                             </div>
 
                             <div class="row align-items-center">
-                                <div class="col-lg-7 animate__animated animate__delay-300ms" data-animation="fadeInLeft">
-                                    <h3 class="font-satoshi-black fs-19 text-rdp-green-water text-uppercase">Manutenção de Habitats</h3>
-                                    <p class="fs-18 text-rdp-green-water"><span class="text-uppercase fw-bold">Habitats fornecem importantes serviços ecossistêmicos</span> e permitem a conservação da biodiversidade. Para mensurar a manutenção desses espaços, foram medidos, além da área de cobertura de vegetação nativa, parâmetros como o tamanho dos fragmentos com capacidade de conservação da biodiversidade, a área núcleo dos fragmentos e a conectividade funcional dos mesmos. No geral, nos dois cenários (RPD e RPD+iLP), haveria, em relação à linha de base, aumento da área de cobertura vegetal nativa, inclusive nos estados com os maiores rebanhos bovinos; no entanto, na maioria dos estados não haveria melhoria nos demais indicadores, resultando em evolução quantitativa, mas não qualitativa para a manutenção dos habitats. Por isso, políticas públicas complementares poderiam ser implementadas visando restaurar a vegetação e garantir a conectividade funcional dos remanescentes de vegetação
+                                <div class="col-lg-7 order-2 order-lg-1 animate__animated animate__delay-300ms" data-animation="fadeInLeft">
+                                    <h3 class="font-satoshi-black fs-19 fs-sm-16 text-rdp-green-water text-uppercase">Manutenção de Habitats</h3>
+                                    <p class="fs-18 fs-sm-16 text-rdp-green-water"><span class="text-uppercase fw-bold">Habitats fornecem importantes serviços ecossistêmicos</span> e permitem a conservação da biodiversidade. Para mensurar a manutenção desses espaços, foram medidos, além da área de cobertura de vegetação nativa, parâmetros como o tamanho dos fragmentos com capacidade de conservação da biodiversidade, a área núcleo dos fragmentos e a conectividade funcional dos mesmos. No geral, nos dois cenários (RPD e RPD+iLP), haveria, em relação à linha de base, aumento da área de cobertura vegetal nativa, inclusive nos estados com os maiores rebanhos bovinos; no entanto, na maioria dos estados não haveria melhoria nos demais indicadores, resultando em evolução quantitativa, mas não qualitativa para a manutenção dos habitats. Por isso, políticas públicas complementares poderiam ser implementadas visando restaurar a vegetação e garantir a conectividade funcional dos remanescentes de vegetação
                                         nativa, através de corredores ecológicos, e a manutenção de áreas nucleares, a fim de diminuir os efeitos de borda nos fragmentos.</p>
                                 </div>
 
-                                <div class="col-lg-5 animate__animated" data-animation="fadeInRight">
-                                    <img src="<?php echo get_template_directory_uri() ?>/assets/images/habitats.png" class="img-fluid">
+                                <div class="col-lg-5 order-1 order-lg-2 animate__animated" data-animation="fadeInRight">
+                                    <img src="<?php echo get_template_directory_uri() ?>/assets/images/habitats.png" class="img-fluid mb-5 mb-lg-0">
                                 </div>
                             </div>
                         </div>
@@ -614,21 +655,21 @@ get_header();
                 <section id="staff" class="py-5">
                     <div class="row justify-content-center">
                         <div class="col-10 rdp-container mb-5">
-                            <h2 class="font-satoshi-black fs-28 text-uppercase">Equipe técnica</h2>
+                            <h2 class="font-satoshi-black fs-28 fs-sm-24 text-uppercase">Equipe técnica</h2>
                             <div class="d-flex flex-column flex-md-row justify-content-start">
                                 <ul class="list-group list-group-flush me-5">
-                                    <li class="list-group-item ps-0 border-0">Joaquim Bento de Souza Ferreira F.</li>
-                                    <li class="list-group-item ps-0 border-0">Alberto G. O. P. Barretto</li>
-                                    <li class="list-group-item ps-0 border-0">Arthur Fendrich</li>
-                                    <li class="list-group-item ps-0 border-0">Giovani W. Gianetti</li>
-                                    <li class="list-group-item ps-0 border-0">João Gabriel Ribeiro Giovanelli</li>
+                                    <li class="list-group-item fs-sm-16 ps-0 border-0">Joaquim Bento de Souza Ferreira F.</li>
+                                    <li class="list-group-item fs-sm-16 ps-0 border-0">Alberto G. O. P. Barretto</li>
+                                    <li class="list-group-item fs-sm-16 ps-0 border-0">Arthur Fendrich</li>
+                                    <li class="list-group-item fs-sm-16 ps-0 border-0">Giovani W. Gianetti</li>
+                                    <li class="list-group-item fs-sm-16 ps-0 border-0">João Gabriel Ribeiro Giovanelli</li>
                                 </ul>
                                 <ul class="list-group list-group-flush">
-                                    <li class="list-group-item ps-0 border-0" ">Marcela Almeida de Araujo</li>
-                                    <li class="list-group-item ps-0 border-0">Marluce da Cruz Scarabello</li>
-                                    <li class="list-group-item ps-0 border-0">Pietro Gragnolati Fernandes</li>
-                                    <li class="list-group-item ps-0 border-0">Rodrigo de Almeida Nobre</li>
-                                    <li class="list-group-item ps-0 border-0">Simone B. Lima Ranieri</li>
+                                    <li class="list-group-item fs-sm-16 ps-0 border-0" ">Marcela Almeida de Araujo</li>
+                                    <li class="list-group-item fs-sm-16 ps-0 border-0">Marluce da Cruz Scarabello</li>
+                                    <li class="list-group-item fs-sm-16 ps-0 border-0">Pietro Gragnolati Fernandes</li>
+                                    <li class="list-group-item fs-sm-16 ps-0 border-0">Rodrigo de Almeida Nobre</li>
+                                    <li class="list-group-item fs-sm-16 ps-0 border-0">Simone B. Lima Ranieri</li>
                                 </ul>
                             </div>
                         </div>

@@ -12,6 +12,8 @@
             rdp.menuCanvas();
             rdp.siteFX();
             rdp.logosCarousel();
+            rdp.hive();
+            rdp.beforeAfter();
         },
 
         utils: function () {
@@ -108,6 +110,20 @@
                 ]
             });
         },
+
+        hive: function () {
+            $('.results-hive .result.bigger').on('click', function () {
+                var type = $(this).data('result-type');
+                $('.results-hive .result').addClass('inactive');
+                $('.results-hive .result.' + type).removeClass('inactive');
+                $(this).removeClass('inactive');
+            })
+        },
+
+        beforeAfter: function () {
+            $('.base-line-1').beforeAfter();
+            $('.base-line-2').beforeAfter();
+        }
 
     };
 })(jQuery);

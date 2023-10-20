@@ -100,16 +100,23 @@
     &.bigger {
       width: 206px;
       height: 206px;
+      cursor: pointer;
 
       .content {
         padding-top: 42px;
       }
     }
 
+    &.inactive {
+      opacity: 0.50;
+    }
+
     &:hover {
-      .content {
-        transform: rotateY(180deg);
-        transition: transform 0.5s;
+      &:not(.bigger, .inactive) {
+        .content {
+          transform: rotateY(180deg);
+          transition: transform 0.5s;
+        }
       }
     }
 
@@ -119,6 +126,10 @@
 
     &.me-3-alt {
       margin-right: 80px !important;
+
+      @include media-breakpoint-down(xl) {
+        margin-right: 0 !important;
+      }
     }
 
     &.ms-3 {
@@ -266,6 +277,10 @@
       @extend .font-satoshi-black;
       @extend .fs-19;
       @extend .text-uppercase;
+
+      @include media-breakpoint-down(md) {
+        font-size: 16px !important;
+      }
     }
   }
 
@@ -275,6 +290,10 @@
       @extend .font-satoshi-regular;
       @extend .fs-19;
       font-weight: normal;
+
+      @include media-breakpoint-down(md) {
+        font-size: 16px !important;
+      }
     }
   }
 
@@ -323,6 +342,50 @@
 
 }
 
-#logos-carousel {
+.environmental-compare {
+  padding: 0 15px;
+  border: 2px solid $rdp-green;
+  border-radius: 15px;
 
+  .environmental-compare-heading {
+    position: relative;
+
+    .icon {
+      position: absolute;
+      top: 0;
+      left: -15px;
+      height: 80px;
+      width: auto;
+      margin-top: -40px;
+      margin-left: -40px;
+
+      @include media-breakpoint-down(md) {
+        height: 60px;
+        left: 0;
+        margin-top: -30px;
+      }
+    }
+  }
+}
+
+.ba-slider {
+  .handle {
+    &:after {
+      content: '';
+      box-shadow: none;
+      border-color: transparent;
+      background-color: $rdp-green;
+      background-image: url($assets-url + 'images/handler.png');
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    &.ba-draggable:after {
+      width: 60px;
+      height: 60px;
+      margin: -30px 0 0 -30px;
+      line-height: 50px;
+      font-size: 30px;
+    }
+  }
 }

@@ -99,6 +99,10 @@
           font-weight: 900;
           color: #fff;
           text-decoration: none;
+
+          @include media-breakpoint-down(md) {
+            font-size: 22px !important;
+          }
         }
 
         ul {
@@ -191,7 +195,11 @@ section {
   &#intro {
     background-image: url($assets-url + 'images/cows.png');
     background-repeat: no-repeat;
-    background-position: center 110%;
+    background-position: center 120%;
+
+    @include media-breakpoint-down(md) {
+      background: none;
+    }
   }
 
   &#one-pager-section {
@@ -241,13 +249,43 @@ section {
 
     @include media-breakpoint-down(lg) {
       padding-right: 0;
+      padding-bottom: 125px !important;
+      margin-bottom: 75px;
 
       .rounded-download-btn-wrapper {
-        position: relative;
+        position: absolute;
         top: auto;
-        left: auto;
-        width: auto;
+        bottom: -130px;
+        left: 0;
+        right: auto;
+        width: 100%;
+        height: 200px;
         background: none;
+
+        &:before {
+          width: 270px;
+          height: 270px;
+          top: 50%;
+          right: 50%;
+          margin-right: -135px;
+        }
+
+        .rounded-download-btn {
+          width: 250px;
+          height: 250px;
+          top: 50%;
+          margin-top: -150px;
+          right: 50%;
+          margin-right: -125px;
+
+          img {
+            max-height: 100px;
+          }
+
+          span {
+            font-size: 24px !important;
+          }
+        }
       }
     }
   }
@@ -258,6 +296,10 @@ section {
     > * {
       position: relative;
       z-index: 2;
+
+      @include media-breakpoint-down(md) {
+        background: $rdp-pink;
+      }
     }
 
     &:before {
@@ -302,6 +344,11 @@ section {
 }
 
 #sidebar-container {
+  -webkit-box-shadow: -10px 0px 10px 0px rgba(0,0,0,0.20);
+  -moz-box-shadow: -10px 0px 10px 0px rgba(0,0,0,0.20);
+  box-shadow: -10px 0px 10px 0px rgba(0,0,0,0.20);
+  z-index: 999;
+
   @include media-breakpoint-down(lg) {
     width: 100%;
     height: 130px;
