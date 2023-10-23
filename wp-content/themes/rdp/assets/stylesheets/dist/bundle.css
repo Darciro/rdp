@@ -15930,6 +15930,12 @@ body {
   }
 }
 
+@media (max-width: 767.98px) {
+  main {
+    overflow: hidden;
+  }
+}
+
 .slow-move {
   -webkit-animation: move 1s infinite alternate;
   animation: move 1s infinite alternate;
@@ -16203,6 +16209,11 @@ body {
   left: -52px;
   top: -8px;
 }
+.icon-title.small-icon img {
+  max-width: 60px;
+  left: -72px;
+  top: -16px;
+}
 .icon-title.alt {
   display: inline-block;
   padding: 10px 30px 10px 52px;
@@ -16474,11 +16485,25 @@ body {
 #secondary .maps-link {
   display: block;
   position: fixed;
-  top: 20vh;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+@media (max-width: 991.98px) {
+  #secondary .maps-link {
+    position: relative;
+    top: 0;
+    transform: translate(0, 0);
+  }
 }
 #secondary .maps-link img {
   width: calc(100% - var(--bs-gutter-x) * 0.5);
   height: auto;
+  min-width: 150px;
+}
+#secondary .maps-link img.maps-vertical {
+  max-width: 75%;
+  margin: auto;
+  min-width: auto;
 }
 #secondary .maps-link .slow-move {
   position: absolute;
@@ -16493,6 +16518,11 @@ body {
   left: calc(var(--bs-gutter-x) * 1.5 * -1);
   top: 50%;
   transform: rotate(90deg) scale(0.85);
+}
+@media (max-width: 991.98px) {
+  #secondary .maps-link .arrow {
+    left: 5px;
+  }
 }
 #secondary .maps-link .arrow:after {
   content: "";
@@ -16709,6 +16739,7 @@ section#staff .list-group .list-group-item {
   font-size: 24px;
   display: block;
   margin-bottom: 5px;
+  line-height: 25px;
 }
 .bigger .hexagon span.title + img {
   max-width: 62px;
@@ -16928,6 +16959,7 @@ section#staff .list-group .list-group-item {
   padding: 0 15px;
   border: 2px solid #1c6d2c;
   border-radius: 15px;
+  background: #fff;
 }
 .environmental-compare .environmental-compare-heading {
   position: relative;

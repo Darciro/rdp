@@ -63,6 +63,7 @@
       font-size: 24px;
       display: block;
       margin-bottom: 5px;
+      line-height: 25px;
 
       + img {
         max-width: 62px;
@@ -346,6 +347,7 @@
   padding: 0 15px;
   border: 2px solid $rdp-green;
   border-radius: 15px;
+  background: #fff;
 
   .environmental-compare-heading {
     position: relative;

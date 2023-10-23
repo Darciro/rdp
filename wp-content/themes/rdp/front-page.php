@@ -55,7 +55,7 @@ get_header();
                                         'showinfo' => 0,
                                         'mute' => 1,
                                         'playlist' => $vid,
-                                        'start'         => 15,
+                                        'start' => 15,
                                     );
                                     $new_src = add_query_arg($params, $src);
                                     $iframe = str_replace($src, $new_src, $iframe);
@@ -101,7 +101,8 @@ get_header();
                 <section id="impacts" class="py-5">
                     <div class="row justify-content-center">
                         <div class="col-10 rdp-container animate__animated" data-animation="fadeInUp">
-                            <p class="fs-18 fs-sm-16"><span class="text-uppercase fw-bold">30 milhões de hectares de pastagens degradadas.</span> Esse é o tamanho da área que o Plano ABC+ (Plano Setorial de Mitigação e de Adaptação às Mudanças Climáticas para a Consolidação de uma Economia de Baixa Emissão de Carbono na Agricultura 2020-2030) pretende recuperar até 2030 no Brasil. O TEEBAgriFood, por meio de uma parceria entre o Programa das Nações Unidas para o Meio Ambiente (PNUMA) e o Grupo de Políticas Públicas da Esalq/USP, buscou entender o impacto dessa política, considerando as interações entre sociedade, economia e natureza. Para isso, avaliou dois cenários até 2030: um com adoção de tecnologias convencionais para RPD e outro que, além da RPD convencional, adota em parte da área a integração lavoura-pecuária (iLP). Ambos os cenários foram comparados a uma linha de base - ou business as usual (BAU) - isto é, uma projeção que considera a não aplicação da política. Trazemos a
+                            <p class="fs-18 fs-sm-16"><span class="text-uppercase fw-bold">30 milhões de hectares de pastagens degradadas.</span> Esse é o tamanho da área que o Plano ABC+ (Plano Setorial de Mitigação e de Adaptação às Mudanças Climáticas para a Consolidação de uma Economia de Baixa Emissão de Carbono na Agricultura 2020-2030) pretende recuperar até 2030 no Brasil. O TEEBAgriFood, por meio de uma parceria entre o Programa das Nações Unidas para o Meio Ambiente (PNUMA) e o Grupo de Políticas Públicas da Esalq/USP, buscou entender o impacto dessa política, considerando as interações entre sociedade, economia e natureza. Para isso, avaliou dois cenários até 2030: um com adoção de tecnologias convencionais para RPD e outro que, além da RPD convencional, adota em parte da área a integração lavoura-pecuária (iLP). Ambos os cenários foram comparados a uma linha de base - ou business as usual (BAU) - isto é, uma projeção que considera a não aplicação da política.
+                                Trazemos a
                                 seguir os principais dados do estudo e convidamos você a se aprofundar nos conteúdos e navegar pelos mapas interativos, clicando ao lado.</p>
                             <div class="text-center">
                                 <img src="<?php echo get_template_directory_uri() ?>/assets/images/image-1.png" class="mx-auto img-fluid">
@@ -156,8 +157,8 @@ get_header();
                         <div class="col-8 rdp-container">
                             <div class="row">
                                 <div class="col-lg-4 animate__animated" data-animation="fadeInLeft">
-                                    <h3 class="font-satoshi-black fs-17 text-uppercase text-rdp-green icon-title">
-                                        <img src="<?php echo get_template_directory_uri() ?>/assets/images/icone-rpd.png">
+                                    <h3 class="font-satoshi-black fs-17 text-uppercase text-rdp-green icon-title small-icon">
+                                        <img src="<?php echo get_template_directory_uri() ?>/assets/images/icone-rpd-x2.png">
                                         Cenário 1 <br>RPD</h3>
                                     <p class="fs-18 fs-sm-16 text-rdp-green">Recuperação de pastagens degradadas é um processo direto de recuperação de pastagens por meio da aplicação de diferentes práticas, como a melhoria da cobertura do solo e das plantas forrageiras existentes nas pastagens com técnicas de manejo e fertilização, ou o completo restabelecimento de uma área através de revolvimento do solo, correção química e semeadura.</p>
                                 </div>
@@ -171,11 +172,11 @@ get_header();
 
                 <section class="bg-rdp-light-red ignore-gutters py-5 mb-5">
                     <div class="row justify-content-center">
-                        <div class="col-10 rdp-container">
+                        <div class="col-8 col-lg-10 rdp-container">
                             <div class="row">
                                 <div class="col-lg-4 mb-3 mb-lg-0 animate__animated" data-animation="fadeInLeft">
-                                    <h3 class="font-satoshi-black fs-17 text-uppercase text-rdp-red icon-title">
-                                        <img src="<?php echo get_template_directory_uri() ?>/assets/images/icone-ilp.png">
+                                    <h3 class="font-satoshi-black fs-17 text-uppercase text-rdp-red icon-title small-icon">
+                                        <img src="<?php echo get_template_directory_uri() ?>/assets/images/icone-ilp-x2.png">
                                         Cenário 2 <br>RPD+iLP</h3>
                                     <p class="fs-18 fs-sm-16 text-rdp-red">Integração lavoura-pecuária é uma forma indireta de recuperação de pastagens que alterna a própria pastagem com culturas temporárias, como milho ou soja. A distribuição da cultura agrícolas foi estimada conforme sua participação regional.</p>
                                 </div>
@@ -226,7 +227,7 @@ get_header();
                                     </div>
 
                                     <div class="d-flex justify-content-start mb-3">
-                                        <img src="<?php echo get_template_directory_uri() ?>/assets/images/icone-rpd.png" class="pe-4 img-fluid" style="height: 80px; width: auto">
+                                        <img src="<?php echo get_template_directory_uri() ?>/assets/images/icone-rpd-x2.png" class="pe-4 img-fluid" style="height: 80px; width: auto">
                                         <div>
                                             <h3 class="font-satoshi-black fs-40 fs-sm-28 text-rdp-green mb-0">R$165 bilhões</h3>
                                             <p class="font-satoshi-black fs-16 m-0 text-rdp-green">de aumento acumulado (com RPD)</p>
@@ -234,7 +235,7 @@ get_header();
                                     </div>
 
                                     <div class="d-flex justify-content-start mb-3">
-                                        <img src="<?php echo get_template_directory_uri() ?>/assets/images/icone-ilp.png" class="pe-4 img-fluid" style="height: 80px; width: auto">
+                                        <img src="<?php echo get_template_directory_uri() ?>/assets/images/icone-ilp-x2.png" class="pe-4 img-fluid" style="height: 80px; width: auto">
                                         <div>
                                             <h3 class="font-satoshi-black fs-40 fs-sm-28 text-rdp-red mb-0">R$202 bilhões</h3>
                                             <p class="font-satoshi-black fs-16 m-0 text-rdp-red">de aumento acumulado (com RPD+iLP)</p>
@@ -360,7 +361,7 @@ get_header();
                     <div class="row justify-content-center">
                         <div class="col-10 rdp-container mb-5 animate__animated" data-animation="fadeInUp">
                             <h2 class="font-satoshi-black fs-17 bg-rdp-pink text-white icon-title alt text-uppercase rounded-end-pill">
-                                <img src="<?php echo get_template_directory_uri() ?>/assets/images/icone-social.png">Resultados sociais
+                                <img src="<?php echo get_template_directory_uri() ?>/assets/images/icone-social.png">Resultados sociais-humanos
                             </h2>
                         </div>
 
@@ -412,7 +413,8 @@ get_header();
                         <div class="col-10 rdp-container animate__animated" data-animation="fadeInUp">
                             <div class="mb-5">
                                 <h3 class="font-satoshi-black fs-28 fs-sm-24 text-rdp-green-water text-uppercase">Conservação de vegetação nativa</h3>
-                                <p class="fs-18 fs-sm-16 text-rdp-green-water"><span class="text-uppercase fw-bold">O crescimento da produtividade</span> da pecuária bovina ampliaria a produção, reduzindo o preço dos produtos e impactando a rentabilidade do setor. Isso levaria a uma redução da demanda por áreas de pastagem em relação à linha de base, evitando desmatamento da vegetação nativa que ocorreria sem a aplicação da política e ampliando a área agrícola e as florestas plantadas. A RDP mostrou que tem potencial de promover um efeito “poupa-terra” em torno de 6,2 milhões de hectares em nível nacional. Esse efeito é ampliado no caso da RPD+iLP, podendo chegar a 7,2 milhões de hectares. Em alguns estados, porém, poderia haver “efeito-rebote”, em que o aumento da produtividade da pecuária estimularia o desmatamento. Vale ressaltar que os efeitos aqui descritos são sempre em relação à linha de base. Portanto, em todos os cenários haverá desmatamento até 2030, mas nos cenários RPD e RPD + iLP
+                                <p class="fs-18 fs-sm-16 text-rdp-green-water"><span class="text-uppercase fw-bold">O crescimento da produtividade</span> da pecuária bovina ampliaria a produção, reduzindo o preço dos produtos e impactando a rentabilidade do setor. Isso levaria a uma redução da demanda por áreas de pastagem em relação à linha de base, evitando desmatamento da vegetação nativa que ocorreria sem a aplicação da política e ampliando a área agrícola e as florestas plantadas. A RDP mostrou que tem potencial de promover um efeito “poupa-terra” em torno de 6,2 milhões de hectares em nível nacional. Esse efeito é ampliado no caso da RPD+iLP, podendo chegar a 7,2 milhões de hectares. Em alguns estados, porém, poderia haver “efeito-rebote”, em que o aumento da produtividade da pecuária estimularia o desmatamento. Vale ressaltar que os efeitos aqui descritos são sempre em relação à linha de base. Portanto, em todos os cenários haverá desmatamento até 2030, mas nos cenários RPD e
+                                    RPD + iLP
                                     esse desmatamento será menor do que na linha de base.</p>
                             </div>
                         </div>
@@ -422,16 +424,16 @@ get_header();
                                 <div class="col-lg-6 mb-5 mb-lg-3 mb-lg-5">
                                     <div class="environmental-compare me-lg-3">
                                         <div class="environmental-compare-heading py-3">
-                                            <img src="<?php echo get_template_directory_uri() ?>/assets/images/icone-rpd.png" class="icon">
+                                            <img src="<?php echo get_template_directory_uri() ?>/assets/images/icone-rpd-x2.png" class="icon">
                                             <h3 class="mt-0 mb-2 text-center">
                                                 <span class="d-block font-satoshi-black fs-19 fs-sm-16">LINHA DE BASE x</span>
                                                 <span class="d-block font-satoshi-black fs-19 fs-sm-16 text-rdp-green">CENÁRIO 1 - RPD</span>
                                             </h3>
                                         </div>
                                         <div class="ba-slider base-line-1 mb-5">
-                                            <img src="<?php echo get_template_directory_uri() ?>/assets/images/mapabau.png" class="img-fluid">
+                                            <img src="<?php echo get_template_directory_uri() ?>/assets/images/mapacen1.jpg" class="img-fluid">
                                             <div class="resize">
-                                                <img src="<?php echo get_template_directory_uri() ?>/assets/images/mapacen1.png" class="img-fluid">
+                                                <img src="<?php echo get_template_directory_uri() ?>/assets/images/mapabau.jpg" class="img-fluid">
                                             </div>
                                             <span class="handle"></span>
                                         </div>
@@ -440,16 +442,16 @@ get_header();
                                 <div class="col-lg-6 mb-5 mb-lg-3 mb-lg-5">
                                     <div class="environmental-compare ms-lg-3">
                                         <div class="environmental-compare-heading py-3">
-                                            <img src="<?php echo get_template_directory_uri() ?>/assets/images/icone-ilp.png" class="icon">
+                                            <img src="<?php echo get_template_directory_uri() ?>/assets/images/icone-ilp-x2.png" class="icon">
                                             <h3 class="font-satoshi-black fs-19 fs-sm-16 mt-0 mb-2 text-center">
                                                 <span class="d-block font-satoshi-black fs-19 fs-sm-16">LINHA DE BASE x</span>
                                                 <span class="d-block font-satoshi-black fs-19 fs-sm-16 text-rdp-red">CENÁRIO 2 - RPD+iLP</span>
                                             </h3>
                                         </div>
                                         <div class="ba-slider base-line-2 mb-5">
-                                            <img src="<?php echo get_template_directory_uri() ?>/assets/images/mapabau.png" class="img-fluid">
+                                            <img src="<?php echo get_template_directory_uri() ?>/assets/images/mapacen2.jpg" class="img-fluid">
                                             <div class="resize">
-                                                <img src="<?php echo get_template_directory_uri() ?>/assets/images/mapacen2.png" class="img-fluid">
+                                                <img src="<?php echo get_template_directory_uri() ?>/assets/images/mapabau.jpg" class="img-fluid">
                                             </div>
                                             <span class="handle"></span>
                                         </div>
@@ -640,7 +642,8 @@ get_header();
                             <div class="row align-items-center">
                                 <div class="col-lg-7 order-2 order-lg-1 animate__animated animate__delay-300ms" data-animation="fadeInLeft">
                                     <h3 class="font-satoshi-black fs-19 fs-sm-16 text-rdp-green-water text-uppercase">Manutenção de Habitats</h3>
-                                    <p class="fs-18 fs-sm-16 text-rdp-green-water"><span class="text-uppercase fw-bold">Habitats fornecem importantes serviços ecossistêmicos</span> e permitem a conservação da biodiversidade. Para mensurar a manutenção desses espaços, foram medidos, além da área de cobertura de vegetação nativa, parâmetros como o tamanho dos fragmentos com capacidade de conservação da biodiversidade, a área núcleo dos fragmentos e a conectividade funcional dos mesmos. No geral, nos dois cenários (RPD e RPD+iLP), haveria, em relação à linha de base, aumento da área de cobertura vegetal nativa, inclusive nos estados com os maiores rebanhos bovinos; no entanto, na maioria dos estados não haveria melhoria nos demais indicadores, resultando em evolução quantitativa, mas não qualitativa para a manutenção dos habitats. Por isso, políticas públicas complementares poderiam ser implementadas visando restaurar a vegetação e garantir a conectividade funcional dos remanescentes de vegetação
+                                    <p class="fs-18 fs-sm-16 text-rdp-green-water"><span class="text-uppercase fw-bold">Habitats fornecem importantes serviços ecossistêmicos</span> e permitem a conservação da biodiversidade. Para mensurar a manutenção desses espaços, foram medidos, além da área de cobertura de vegetação nativa, parâmetros como o tamanho dos fragmentos com capacidade de conservação da biodiversidade, a área núcleo dos fragmentos e a conectividade funcional dos mesmos. No geral, nos dois cenários (RPD e RPD+iLP), haveria, em relação à linha de base, aumento da área de cobertura vegetal nativa, inclusive nos estados com os maiores rebanhos bovinos; no entanto, na maioria dos estados não haveria melhoria nos demais indicadores, resultando em evolução quantitativa, mas não qualitativa para a manutenção dos habitats. Por isso, políticas públicas complementares poderiam ser implementadas visando restaurar a vegetação e garantir a conectividade funcional dos remanescentes de
+                                        vegetação
                                         nativa, através de corredores ecológicos, e a manutenção de áreas nucleares, a fim de diminuir os efeitos de borda nos fragmentos.</p>
                                 </div>
 
@@ -665,7 +668,8 @@ get_header();
                                     <li class="list-group-item fs-sm-16 ps-0 border-0">João Gabriel Ribeiro Giovanelli</li>
                                 </ul>
                                 <ul class="list-group list-group-flush">
-                                    <li class="list-group-item fs-sm-16 ps-0 border-0" ">Marcela Almeida de Araujo</li>
+                                    <li class="list-group-item fs-sm-16 ps-0 border-0"
+                                    ">Marcela Almeida de Araujo</li>
                                     <li class="list-group-item fs-sm-16 ps-0 border-0">Marluce da Cruz Scarabello</li>
                                     <li class="list-group-item fs-sm-16 ps-0 border-0">Pietro Gragnolati Fernandes</li>
                                     <li class="list-group-item fs-sm-16 ps-0 border-0">Rodrigo de Almeida Nobre</li>

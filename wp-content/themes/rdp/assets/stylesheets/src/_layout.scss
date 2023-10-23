@@ -153,11 +153,25 @@
   .maps-link {
     display: block;
     position: fixed;
-    top: 20vh;
+    top: 50%;
+    transform: translate(0, -50%);
+
+    @include media-breakpoint-down(lg) {
+      position: relative;
+      top: 0;
+      transform: translate(0, 0);
+    }
 
     img {
       width: calc(100% - var(--bs-gutter-x) * 0.5);
       height: auto;
+      min-width: 150px;
+
+      &.maps-vertical {
+        max-width: 75%;
+        margin: auto;
+        min-width: auto;
+      }
     }
 
     .slow-move {
@@ -174,6 +188,10 @@
       left: calc(var(--bs-gutter-x) * 1.5 * -1);
       top: 50%;
       transform: rotate(90deg) scale(0.85);
+
+      @include media-breakpoint-down(lg) {
+        left: 5px;
+      }
 
       &:after {
         content: "";

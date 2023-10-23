@@ -89,6 +89,12 @@ body {
   }
 }
 
+main {
+  @include media-breakpoint-down(md) {
+    overflow: hidden;
+  }
+}
+
 .slow-move {
   -webkit-animation: move 1s infinite alternate;
   animation: move 1s infinite alternate;
@@ -355,6 +361,14 @@ body {
     position: absolute;
     left: -52px;
     top: -8px;
+  }
+
+  &.small-icon {
+    img {
+      max-width: 60px;
+      left: -72px;
+      top: -16px;
+    }
   }
 
   &.alt {

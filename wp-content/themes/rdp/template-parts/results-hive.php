@@ -106,8 +106,8 @@
             <div class="content">
                 <div class="front">
                     <div class="hexagon bg-rdp-pink with-icon">
-                        <span class="title">Sociais</span>
-                        <img src="<?php echo get_template_directory_uri() ?>/assets/images/icone-social.png">
+                        <span class="title">Sociais-<br>Humanos</span>
+                        <img src="<?php echo get_template_directory_uri() ?>/assets/images/icone-social-alt.png" class="rounded-circle bg-white">
                     </div>
                 </div>
                 <div class="back">
@@ -122,7 +122,7 @@
                 <div class="front">
                     <div class="hexagon bg-rdp-green-water with-icon">
                         <span class="title">Ambientais</span>
-                        <img src="<?php echo get_template_directory_uri() ?>/assets/images/icone-ambiental.png">
+                        <img src="<?php echo get_template_directory_uri() ?>/assets/images/icone-ambiental-alt.png">
                     </div>
                 </div>
                 <div class="back">
