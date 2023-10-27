@@ -16214,6 +16214,13 @@ body {
   left: -72px;
   top: -16px;
 }
+@media (max-width: 767.98px) {
+  .icon-title.small-icon img {
+    max-width: 40px;
+    left: -50px;
+    top: 0;
+  }
+}
 .icon-title.alt {
   display: inline-block;
   padding: 10px 30px 10px 52px;
@@ -16537,14 +16544,23 @@ body {
 }
 
 /* Sections */
-section#intro {
-  background-image: url("../../../assets/images/cows.png");
-  background-repeat: no-repeat;
-  background-position: center 120%;
+section#intro .intro-heading {
+  max-width: 1140px;
+  flex: 0 0 auto;
+  width: 75%;
+  margin: 90px auto 15px;
 }
 @media (max-width: 767.98px) {
-  section#intro {
-    background: none;
+  section#intro .intro-heading {
+    margin: 0 auto;
+  }
+}
+@media (max-height: 840px) {
+  section#intro .intro-content > div {
+    height: 50vh;
+  }
+  section#intro .intro-content > div.intro-heading {
+    flex-basis: max-content;
   }
 }
 section#one-pager-section {
@@ -16706,9 +16722,9 @@ section#staff .list-group .list-group-item {
   content: "";
   display: block;
   position: absolute;
-  top: -32px;
+  top: -42px;
   width: 0;
-  border-bottom: 32px solid #aa69e3;
+  border-bottom: 42px solid #aa69e3;
   border-left: 75px solid transparent;
   border-right: 75px solid transparent;
 }
@@ -16716,9 +16732,9 @@ section#staff .list-group .list-group-item {
   content: "";
   display: block;
   position: absolute;
-  bottom: -32px;
+  bottom: -42px;
   width: 0;
-  border-top: 32px solid #aa69e3;
+  border-top: 42px solid #aa69e3;
   border-left: 75px solid transparent;
   border-right: 75px solid transparent;
 }
@@ -16750,12 +16766,12 @@ section#staff .list-group .list-group-item {
   border-right: 103px solid transparent;
 }
 .bigger .hexagon:before {
-  top: -42px;
-  border-bottom-width: 42px;
+  top: -60px;
+  border-bottom-width: 60px;
 }
 .bigger .hexagon:after {
-  bottom: -42px;
-  border-top-width: 42px;
+  bottom: -60px;
+  border-top-width: 60px;
 }
 
 .results-hive {
@@ -16819,7 +16835,7 @@ section#staff .list-group .list-group-item {
 }
 .results-hive .line-2,
 .results-hive .line-3 {
-  margin-top: -32px;
+  margin-top: -30px;
 }
 @media (max-width: 1199.98px) {
   .results-hive {
@@ -16834,12 +16850,19 @@ section#staff .list-group .list-group-item {
     margin-right: 30px;
   }
   .results-hive .result {
-    margin-bottom: 15px;
+    margin-bottom: 30px;
   }
 }
 @media (max-width: 767.98px) {
   .results-hive {
     flex-direction: column;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .results-filtered .results-hive {
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
   }
 }
 

@@ -15176,6 +15176,12 @@
         hive: function () {
             $('.results-hive .result.bigger').on('click', function () {
                 var type = $(this).data('result-type');
+
+                if( $(this).closest('.results-hive').hasClass('sm-hive') ) {
+                    $('.sm-result-line').removeClass('d-flex').addClass('d-none');
+                    $('.' + type +'-line').removeClass('d-none').addClass('d-flex');
+                }
+
                 $('.results-hive .result').addClass('inactive');
                 $('.results-hive .result.' + type).removeClass('inactive');
                 $(this).removeClass('inactive');

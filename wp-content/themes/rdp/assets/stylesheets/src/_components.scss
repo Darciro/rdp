@@ -19,9 +19,9 @@
     content: '';
     display: block;
     position: absolute;
-    top: -32px;
+    top: -42px;
     width: 0;
-    border-bottom: 32px solid $rdp-purple;
+    border-bottom: 42px solid $rdp-purple;
     border-left: 75px solid transparent;
     border-right: 75px solid transparent;
   }
@@ -30,9 +30,9 @@
     content: '';
     display: block;
     position: absolute;
-    bottom: -32px;
+    bottom: -42px;
     width: 0;
-    border-top: 32px solid $rdp-purple;
+    border-top: 42px solid $rdp-purple;
     border-left: 75px solid transparent;
     border-right: 75px solid transparent;
   }
@@ -78,13 +78,13 @@
     }
 
     &:before {
-      top: -42px;
-      border-bottom-width: 42px;
+      top: -60px;
+      border-bottom-width: 60px;
     }
 
     &:after {
-      bottom: -42px;
-      border-top-width: 42px;
+      bottom: -60px;
+      border-top-width: 60px;
     }
   }
 
@@ -166,7 +166,7 @@
 
   .line-2,
   .line-3 {
-    margin-top: -32px;
+    margin-top: -30px;
   }
 
   @include media-breakpoint-down(xl) {
@@ -183,12 +183,21 @@
     }
 
     .result {
-      margin-bottom: 15px;
+      margin-bottom: 30px;
     }
   }
 
   @include media-breakpoint-down(md) {
     flex-direction: column;
+  }
+}
+
+.results-filtered {
+  .results-hive {
+    @include media-breakpoint-down(md) {
+      flex-direction: row !important;
+      flex-wrap: wrap !important;
+    }
   }
 }
 

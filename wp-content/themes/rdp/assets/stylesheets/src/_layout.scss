@@ -211,12 +211,27 @@
 /* Sections */
 section {
   &#intro {
-    background-image: url($assets-url + 'images/cows.png');
-    background-repeat: no-repeat;
-    background-position: center 120%;
+    .intro-heading {
+      max-width: 1140px;
+      flex: 0 0 auto;
+      width: 75%;
+      margin: 90px auto 15px;
 
-    @include media-breakpoint-down(md) {
-      background: none;
+      @include media-breakpoint-down(md) {
+        margin: 0 auto;
+      }
+    }
+
+    @media (max-height: 840px) {
+      .intro-content {
+        > div {
+          height: 50vh;
+
+          &.intro-heading {
+            flex-basis: max-content;
+          }
+        }
+      }
     }
   }
 
@@ -362,9 +377,9 @@ section {
 }
 
 #sidebar-container {
-  -webkit-box-shadow: -10px 0px 10px 0px rgba(0,0,0,0.20);
-  -moz-box-shadow: -10px 0px 10px 0px rgba(0,0,0,0.20);
-  box-shadow: -10px 0px 10px 0px rgba(0,0,0,0.20);
+  -webkit-box-shadow: -10px 0px 10px 0px rgba(0, 0, 0, 0.20);
+  -moz-box-shadow: -10px 0px 10px 0px rgba(0, 0, 0, 0.20);
+  box-shadow: -10px 0px 10px 0px rgba(0, 0, 0, 0.20);
   z-index: 999;
 
   @include media-breakpoint-down(lg) {
