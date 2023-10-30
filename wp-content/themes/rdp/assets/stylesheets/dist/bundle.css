@@ -17020,3 +17020,10 @@ section#staff .list-group .list-group-item {
   line-height: 50px;
   font-size: 30px;
 }
+
+#rdp-i18n #flags {
+  display: none !important;
+}
+#rdp-i18n .goog-te-gadget-simple {
+  padding: 7px !important;
+}

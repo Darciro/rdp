@@ -13,6 +13,10 @@
                 'menu_class' => 'main-menu',
             ));
             ?>
+
+            <div id="rdp-i18n" class="mt-4">
+                <?php echo do_shortcode('[google-translator]'); ?>
+            </div>
         </div>
     </div>
 </nav>
