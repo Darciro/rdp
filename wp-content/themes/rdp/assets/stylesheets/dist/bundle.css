@@ -15899,6 +15899,20 @@ textarea.form-control-lg {
   animation-delay: 1000ms;
 }
 
+h1, .h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+  color: #545454;
+}
+
 @-webkit-keyframes move {
   0% {
     transform: translateX(0);
@@ -16147,6 +16161,10 @@ body {
 
 .fs-16 {
   font-size: 16px !important;
+}
+
+.fs-14 {
+  font-size: 14px !important;
 }
 
 .fs-12 {
@@ -17026,4 +17044,34 @@ section#staff .list-group .list-group-item {
 }
 #rdp-i18n .goog-te-gadget-simple {
   padding: 7px !important;
+}
+
+#map-selector .form-check {
+  margin: 0;
+  padding-left: 1.25em;
+}
+#map-selector .form-check .form-check-input {
+  margin-left: -1.25em;
+  background-color: #545454;
+}
+#map-selector .form-check .form-check-input:checked {
+  border-color: #1e6d2d;
+}
+#map-selector .form-check .form-check-input:focus, #map-selector .form-check .form-check-input:active {
+  box-shadow: 0 0 0 0.25rem rgba(30, 109, 45, 0.25);
+}
+#map-selector .form-check label {
+  padding: 0 5px;
+}
+#map-selector .maps {
+  position: relative;
+}
+#map-selector .maps img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+#map-selector .maps img.active {
+  opacity: 1;
 }

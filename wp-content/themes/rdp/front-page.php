@@ -23,7 +23,7 @@ get_header();
                         <div class="col-lg-12 text-center vh-100">
                             <div class="d-flex flex-column justify-content-center justify-md-content-between vh-100 intro-content">
                                 <div class="intro-heading">
-                                    <h1 class="text-center font-satoshi-black fs-40 fs-sm-28 px-3 animate__animated animate__delay-1s" data-animation="fadeInUp"><?php the_field('intro_title'); ?></h1>
+                                    <h1 class="text-center text-white font-satoshi-black fs-40 fs-sm-28 px-3 animate__animated animate__delay-1s" data-animation="fadeInUp"><?php the_field('intro_title'); ?></h1>
                                     <p class="fs-18 fs-sm-16 animate__animated animate__delay-2s" data-animation="fadeInUp"><?php the_field('intro_text'); ?></p>
                                 </div>
                                 <div class="d-none d-md-block">
@@ -106,7 +106,7 @@ get_header();
                     <div class="row justify-content-center text-white">
                         <div class="col-10 col-md-8 rdp-container text-center text-lg-start">
                             <div class="animate__animated" data-animation="fadeInUp">
-                                <h2 class="font-satoshi-black fs-39 fs-sm-28 mb-3"><?php the_field('impact_title'); ?></h2>
+                                <h2 class="font-satoshi-black text-white fs-39 fs-sm-28 mb-3"><?php the_field('impact_title'); ?></h2>
                                 <?php the_field('impact_text'); ?>
                             </div>
                             <div class="rounded-download-btn-wrapper">
@@ -142,15 +142,44 @@ get_header();
                 <section id="section-rpd" class="bg-rdp-light-green ignore-gutters py-5 mb-5">
                     <div class="row justify-content-center">
                         <div class="col-8 rdp-container">
-                            <div class="row align-items-center">
+                            <div class="row align-items-start">
                                 <div class="col-lg-4 animate__animated" data-animation="fadeInLeft">
                                     <h3 class="font-satoshi-black fs-17 text-uppercase text-rdp-green icon-title small-icon">
                                         <img src="<?php echo get_template_directory_uri() ?>/assets/images/icone-rpd-x2.png">
                                         Cenário 1 <br>RPD</h3>
                                     <?php the_field('scenario_rdp_text'); ?>
                                 </div>
-                                <div class="col-lg-8 text-center animate__animated" data-animation="fadeInRight">
-                                    <img src="<?php echo wp_get_attachment_image_url(get_field('scenario_rdp_map'), 'full'); ?>" class="mx-auto img-fluid">
+                                <div class="col-lg-8 animate__animated" data-animation="fadeInRight">
+                                    <div id="map-selector">
+                                        <div class="map-heading">
+                                            <h3 class="font-satoshi-black fs-17 text-uppercase m-0">Qualidade da pastagem</h3>
+                                            <h4 class="font-satoshi-black fs-16 mb-3">Classes de degradação de pastagem (2020)</h4>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="severe" id="severe" checked>
+                                                <label class="form-check-label font-satoshi-medium fs-14 text-uppercase text-white bg-rdp-red" for="severe">
+                                                    Severa <span class="font-satoshi-regular">36,5 Mha</span>
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="intermediary" id="intermediary" checked>
+                                                <label class="form-check-label font-satoshi-medium fs-14 text-uppercase bg-rdp-light-pink" for="intermediary">
+                                                    Intermediária <span class="font-satoshi-regular">66,3 Mha</span>
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="absent" id="absent" checked>
+                                                <label class="form-check-label font-satoshi-medium fs-14 text-uppercase text-white bg-rdp-secondary" for="absent">
+                                                    Ausente
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="maps ratio ratio-1x1">
+                                            <img src="<?php echo get_template_directory_uri() ?>/assets/images/mapa-severo.png" class="map img-fluid active severe">
+                                            <img src="<?php echo get_template_directory_uri() ?>/assets/images/mapa-intermediario.png" class="map img-fluid active intermediary">
+                                            <img src="<?php echo get_template_directory_uri() ?>/assets/images/mapa-ausente.png" class="map img-fluid active absent">
+                                            <img src="<?php echo get_template_directory_uri() ?>/assets/images/mapa-todos.png" class="map default-map img-fluid">
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>

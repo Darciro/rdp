@@ -410,3 +410,43 @@
     padding: 7px !important;
   }
 }
+
+#map-selector {
+  .form-check {
+    margin: 0;
+    padding-left: 1.25em;
+
+    .form-check-input {
+      margin-left: -1.25em;
+      background-color: $rdp-dark-grey;
+
+      &:checked {
+        border-color: $rdp-secondary;
+      }
+
+      &:focus,
+      &:active {
+        box-shadow: 0 0 0 0.25rem rgb(30, 109, 45, .25);
+      }
+    }
+
+    label {
+      padding: 0 5px;
+    }
+  }
+
+  .maps {
+    position: relative;
+
+    img {
+      position: absolute;
+      left: 0;
+      top: 0;
+      opacity: 0;
+
+      &.active {
+        opacity: 1;
+      }
+    }
+  }
+}

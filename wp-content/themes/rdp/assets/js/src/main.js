@@ -14,6 +14,7 @@
             rdp.logosCarousel();
             rdp.hive();
             rdp.beforeAfter();
+            rdp.mapsSelector();
         },
 
         utils: function () {
@@ -129,6 +130,20 @@
         beforeAfter: function () {
             $('.base-line-1').beforeAfter();
             $('.base-line-2').beforeAfter();
+        },
+
+        mapsSelector: function () {
+            $('#map-selector .form-check-input').on('change', function () {
+                var map = $(this).val(),
+                    counter = $('#map-selector .form-check-input:checked').length;
+
+                $('#map-selector .maps .map.' + map).toggleClass('active');
+                if( counter === 0 ) {
+                    $('#map-selector .maps .map.default-map').addClass('active');
+                } else {
+                    $('#map-selector .maps .map.default-map').removeClass('active');
+                }
+            });
         }
 
     };

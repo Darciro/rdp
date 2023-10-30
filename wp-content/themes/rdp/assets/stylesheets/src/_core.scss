@@ -16,6 +16,7 @@ $rdp-light-green-water: #ecf5f5 !default;
 $rdp-light-green: #e6efe6 !default;
 $rdp-orange: #ec9245 !default;
 $rdp-light-orange: #ebe3d3 !default;
+$rdp-dark-grey: #545454 !default;
 
 /* Mixins */
 @mixin placeholder-color($color) {
@@ -55,6 +56,15 @@ $rdp-light-orange: #ebe3d3 !default;
     -webkit-animation-delay: #{$miliseconds}ms;
     animation-delay: #{$miliseconds}ms;
   }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $rdp-dark-grey;
 }
 
 @-webkit-keyframes move {
@@ -301,6 +311,10 @@ main {
 
 .fs-16 {
   font-size: 16px !important;
+}
+
+.fs-14 {
+  font-size: 14px !important;
 }
 
 .fs-12 {
