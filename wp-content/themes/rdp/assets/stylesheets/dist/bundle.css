@@ -16053,6 +16053,10 @@ body {
   color: #ebe3d3 !important;
 }
 
+.text-rdp-yellow {
+  color: #f5ac00 !important;
+}
+
 .bg-rdp-main, #main-nav .offcanvas {
   background-color: #f5ac00 !important;
 }
@@ -16107,6 +16111,10 @@ body {
 
 .bg-rdp-light-orange {
   background-color: #ebe3d3 !important;
+}
+
+.bg-rdp-yellow {
+  background-color: #f5ac00 !important;
 }
 
 .font-satoshi-black, .table thead th, .rounded-download-btn-wrapper .rounded-download-btn span, .bigger .hexagon span.title, #main-nav .offcanvas .main-menu li a {
@@ -16260,6 +16268,10 @@ body {
 
 .rdp-container {
   max-width: 1140px;
+}
+
+.text-normal {
+  text-transform: none !important;
 }
 
 /**
@@ -16562,6 +16574,19 @@ body {
 }
 
 /* Sections */
+section#intro {
+  /*@media (max-height: 840px) {
+    .intro-content {
+      > div {
+        height: 50vh;
+
+        &.intro-heading {
+          flex-basis: max-content;
+        }
+      }
+    }
+  }*/
+}
 section#intro .intro-heading {
   max-width: 1140px;
   flex: 0 0 auto;
@@ -16571,14 +16596,6 @@ section#intro .intro-heading {
 @media (max-width: 767.98px) {
   section#intro .intro-heading {
     margin: 0 auto;
-  }
-}
-@media (max-height: 840px) {
-  section#intro .intro-content > div {
-    height: 50vh;
-  }
-  section#intro .intro-content > div.intro-heading {
-    flex-basis: max-content;
   }
 }
 section#one-pager-section {
@@ -17049,10 +17066,12 @@ section#staff .list-group .list-group-item {
 #map-selector .form-check {
   margin: 0;
   padding-left: 1.25em;
+  cursor: pointer;
 }
 #map-selector .form-check .form-check-input {
   margin-left: -1.25em;
   background-color: #545454;
+  cursor: pointer;
 }
 #map-selector .form-check .form-check-input:checked {
   border-color: #1e6d2d;
@@ -17062,6 +17081,7 @@ section#staff .list-group .list-group-item {
 }
 #map-selector .form-check label {
   padding: 0 5px;
+  cursor: pointer;
 }
 #map-selector .maps {
   position: relative;

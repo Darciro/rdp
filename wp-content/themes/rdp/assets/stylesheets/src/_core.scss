@@ -16,6 +16,7 @@ $rdp-light-green-water: #ecf5f5 !default;
 $rdp-light-green: #e6efe6 !default;
 $rdp-orange: #ec9245 !default;
 $rdp-light-orange: #ebe3d3 !default;
+$rdp-yellow: #f5ac00 !default;
 $rdp-dark-grey: #545454 !default;
 
 /* Mixins */
@@ -205,6 +206,10 @@ main {
   color: $rdp-light-orange !important;
 }
 
+.text-rdp-yellow {
+  color: $rdp-yellow !important;
+}
+
 .bg-rdp-main {
   background-color: $rdp-main !important;
 }
@@ -259,6 +264,10 @@ main {
 
 .bg-rdp-light-orange {
   background-color: $rdp-light-orange !important;
+}
+
+.bg-rdp-yellow {
+  background-color: $rdp-yellow !important;
 }
 
 .font-satoshi-black {
@@ -414,4 +423,8 @@ main {
 
 .rdp-container {
   max-width: 1140px;
+}
+
+.text-normal {
+  text-transform: none !important;
 }

@@ -18,16 +18,16 @@ get_header();
         <div class="row h-100">
             <div class="col-12 col-lg-10">
 
-                <section id="intro" class="text-white ignore-gutters bg-rdp-main vh-100">
-                    <div class="row justify-content-center vh-100">
-                        <div class="col-lg-12 text-center vh-100">
-                            <div class="d-flex flex-column justify-content-center justify-md-content-between vh-100 intro-content">
+                <section id="intro" class="text-white ignore-gutters bg-rdp-main">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-12 text-center">
+                            <div class="d-flex flex-column justify-content-center justify-md-content-between intro-content">
                                 <div class="intro-heading">
                                     <h1 class="text-center text-white font-satoshi-black fs-40 fs-sm-28 px-3 animate__animated animate__delay-1s" data-animation="fadeInUp"><?php the_field('intro_title'); ?></h1>
                                     <p class="fs-18 fs-sm-16 animate__animated animate__delay-2s" data-animation="fadeInUp"><?php the_field('intro_text'); ?></p>
                                 </div>
                                 <div class="d-none d-md-block">
-                                    <img src="<?php echo wp_get_attachment_image_url(get_field('background'), 'full'); ?>" class="w-100 rdp-container">
+                                    <img src="<?php echo wp_get_attachment_image_url(get_field('background'), 'full'); ?>" class="img-fluid rdp-container">
                                 </div>
                             </div>
                         </div>
@@ -79,13 +79,19 @@ get_header();
                 <section id="complete-results" class="ignore-gutters pt-5 bg-rdp-pink">
                     <h2 class="font-satoshi-black fs-28 fs-sm-24 text-uppercase text-center text-white mb-5 mb-md-3 mt-md-5 animate__animated" data-animation="fadeInUp"><?php the_field('report_title'); ?></h2>
                     <div class="d-flex flex-column flex-md-row justify-content-center align-items-center">
-                        <div class="rounded-download-btn-wrapper mx-5">
+                        <div class="rounded-download-btn-wrapper mx-3 mx-xl-4">
                             <a href="<?php the_field('executive_summary'); ?>" target="_blank" download class="rounded-download-btn animate__animated" data-animation="fadeIn">
                                 <img src="<?php echo get_template_directory_uri() ?>/assets/images/download-pink.png" class="mx-auto img-fluid">
                                 <span class="font-satoshi-black fs-18 fs-sm-16 text-uppercase">Sumário executivo</span>
                             </a>
                         </div>
-                        <div class="rounded-download-btn-wrapper my-3 my-md-0 mx-5">
+                        <div class="rounded-download-btn-wrapper my-3 my-md-0 mx-3 mx-xl-4">
+                            <a href="<?php the_field('complete_report'); ?>" target="_blank" download class="rounded-download-btn animate__animated" data-animation="fadeIn">
+                                <img src="<?php echo get_template_directory_uri() ?>/assets/images/download-pink.png" class="mx-auto img-fluid">
+                                <span class="font-satoshi-black fs-18 fs-sm-16 text-uppercase">Executive summary</span>
+                            </a>
+                        </div>
+                        <div class="rounded-download-btn-wrapper my-3 my-md-0 mx-3 mx-xl-4">
                             <a href="<?php the_field('complete_report'); ?>" target="_blank" download class="rounded-download-btn animate__animated" data-animation="fadeIn">
                                 <img src="<?php echo get_template_directory_uri() ?>/assets/images/download-pink.png" class="mx-auto img-fluid">
                                 <span class="font-satoshi-black fs-18 fs-sm-16 text-uppercase">Relatório completo</span>
@@ -127,13 +133,44 @@ get_header();
                                 <?php the_field('degradation_text'); ?>
                             </div>
                             <div class="mt-5">
-                                <h2 class="font-satoshi-black fs-17 text-uppercase mb-3 animate__animated" data-animation="fadeInUp">Área degradada por tamanho de propriedade e região</h2>
+                                <h2 class="font-satoshi-black fs-17 text-uppercase mb-3 animate__animated" data-animation="fadeInUp">Área degradada por tamanho de propriedade rural e região</h2>
                                 <?php the_field('degradation_embed'); ?>
+                            </div>
 
+                            <div class="mt-5">
+                                <!--<h2 class="font-satoshi-black fs-17 text-uppercase mb-3 animate__animated" data-animation="fadeInUp">Comparação entre a área degradada e potencialmente recuperada</h2>-->
+
+                                <div class="col-12 rdp-container">
+                                    <div class="row justify-content-center mt-5">
+                                        <?php $degraded_area = get_field('degraded_area'); ?>
+                                        <div class="col-lg-6 mb-5 mb-lg-3 mb-lg-5">
+                                            <div class="environmental-compare me-lg-3">
+                                                <div class="environmental-compare-heading py-3">
+                                                    <h3 class="mt-0 mb-2 text-center">
+                                                        <span class="d-block font-satoshi-black fs-19 fs-sm-16">Comparação entre a área degradada e potencialmente recuperada</span>
+                                                    </h3>
+                                                </div>
+                                                <div class="ba-slider base-line-1 mb-5">
+                                                    <img src="<?php echo wp_get_attachment_image_url($degraded_area['degraded_area_comparison_2'], 'full'); ?>" class="img-fluid">
+                                                    <div class="resize">
+                                                        <img src="<?php echo wp_get_attachment_image_url($degraded_area['degraded_area_comparison_1'], 'full'); ?>" class="img-fluid">
+                                                    </div>
+                                                    <span class="handle"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <div class="mt-5 animate__animated" data-animation="fadeInUp">
-                                <h2 class="font-satoshi-black fs-17 text-uppercase mb-3">Distribuição das áreas a serem recuperadas com RPD e RPD+iLP</h2>
+                                <h2 class="font-satoshi-black fs-17 mb-3"><span class="text-uppercase font-satoshi-black">Distribuição das áreas a serem recuperadas com RPD e RPD</span>+iLP</h2>
                                 <img src="<?php echo wp_get_attachment_image_url(get_field('degradation_map_image'), 'full'); ?>" class="mx-auto img-fluid">
+                            </div>
+                            <div class="mt-5 animate__animated" data-animation="fadeInUp">
+                                <h2 class="font-satoshi-black fs-17 mb-3"><span class="text-uppercase font-satoshi-black">As regiões analisadas</h2>
+                                <div class="fs-18 fs-sm-16">
+                                    <?php the_field('analysed_regions'); ?>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -162,7 +199,7 @@ get_header();
                                             </div>
                                             <div class="form-check">
                                                 <input class="form-check-input" type="checkbox" value="intermediary" id="intermediary" checked>
-                                                <label class="form-check-label font-satoshi-medium fs-14 text-uppercase bg-rdp-light-pink" for="intermediary">
+                                                <label class="form-check-label font-satoshi-medium fs-14 text-uppercase bg-rdp-yellow" for="intermediary">
                                                     Intermediária <span class="font-satoshi-regular">66,3 Mha</span>
                                                 </label>
                                             </div>
@@ -191,9 +228,9 @@ get_header();
                         <div class="col-8 col-lg-10 rdp-container">
                             <div class="row">
                                 <div class="col-lg-4 mb-3 mb-lg-0 animate__animated" data-animation="fadeInLeft">
-                                    <h3 class="font-satoshi-black fs-17 text-uppercase text-rdp-red icon-title small-icon">
+                                    <h3 class="font-satoshi-black fs-17 text-rdp-red icon-title small-icon">
                                         <img src="<?php echo get_template_directory_uri() ?>/assets/images/icone-ilp-x2.png">
-                                        Cenário 2 <br>RPD+iLP</h3>
+                                        <span class="text-uppercase font-satoshi-black">Cenário 2</span> <br>RPD+iLP</h3>
                                     <?php the_field('scenario_rdp_ilp_text'); ?>
                                 </div>
                                 <div class="col-lg-4 mb-5 mb-lg-0 text-center animate__animated" data-animation="fadeInRight">
@@ -234,10 +271,9 @@ get_header();
 
                                 <div class="col-lg-5 animate__animated" data-animation="fadeInLeft">
                                     <div class="mb-4">
-                                        <h3 class="font-satoshi-black fs-28 fs-sm-24 text-rdp-purple text-uppercase">Crescimento do PIB</h3>
-                                        <h3 class="font-satoshi-black fs-40 fs-sm-28">R$13 bilhões</h3>
-                                        <p class="font-satoshi-black fs-16 m-0">de investimento (Plano ABC+)</p>
-                                        <p class="font-satoshi-black fs-16 m-0">Gerariam:</p>
+                                        <h3 class="fs-28 fs-sm-24 text-rdp-purple text-uppercase">O volume de investimento</h3>
+                                        <h3 class="fs-40 fs-sm-28">de R$13 bilhões</h3>
+                                        <p class="fs-16 m-0">e o custeio de R$131 bilhões (Plano ABC+) gerariam:</p>
                                     </div>
 
                                     <div class="d-flex justify-content-start mb-3">
@@ -252,7 +288,7 @@ get_header();
                                         <img src="<?php echo get_template_directory_uri() ?>/assets/images/icone-ilp-x2.png" class="pe-4 img-fluid" style="height: 80px; width: auto">
                                         <div>
                                             <h3 class="font-satoshi-black fs-40 fs-sm-28 text-rdp-red mb-0">R$202 bilhões</h3>
-                                            <p class="font-satoshi-black fs-16 m-0 text-rdp-red">de aumento acumulado (com RPD+iLP)</p>
+                                            <p class="font-satoshi-black fs-16 m-0 text-rdp-red">de aumento acumulado (com RPD+<span class="text-normal">iLP</span>)</p>
                                         </div>
                                     </div>
 
@@ -277,7 +313,7 @@ get_header();
                                     <tr>
                                         <th scope="col">Agregados<br> Macroeconômicos</th>
                                         <th scope="col" class="text-center">Percentual<br> acumulada RPD</th>
-                                        <th scope="col" class="text-center">Percentual<br> acumulada RPD+iLP</th>
+                                        <th scope="col" class="text-center">Percentual<br> acumulada RPD+<span class="text-normal">iLP</span></th>
                                     </tr>
                                     </thead>
                                     <?php if (have_rows('table_aggregates')): ?>
@@ -302,7 +338,7 @@ get_header();
                                     <tr>
                                         <th scope="col">Mudança percentual nas exportações<br> Brasileiras acumuladas até o ano de 2030</th>
                                         <th scope="col" class="text-center text-rdp-green">Cenário 1<br> RPD</th>
-                                        <th scope="col" class="text-center text-rdp-red">Cenário 2<br> RPD+iLP</th>
+                                        <th scope="col" class="text-center text-rdp-red">Cenário 2<br> RPD+<span class="text-normal">iLP</span></th>
                                     </tr>
                                     </thead>
                                     <?php if (have_rows('table_exports')): ?>
@@ -339,19 +375,19 @@ get_header();
                             </div>
 
                             <div class="mb-5 animate__animated" data-animation="fadeInUp">
-                                <h3 class="font-satoshi-regular mb-3 fs-19 fs-sm-16 text-rdp-pink text-uppercase">Consumo geral das famílais</h3>
+                                <h3 class="font-satoshi-black mb-3 fs-19 fs-sm-16 text-rdp-pink text-uppercase">Consumo geral das famílias</h3>
                                 <?php the_field('social_embed_1'); ?>
                                 <hr>
                                 <?php the_field('social_embed_2'); ?>
                             </div>
 
                             <div class="mb-5 animate__animated" data-animation="fadeInUp">
-                                <h3 class="font-satoshi-regular mb-3 fs-19 fs-sm-16 text-rdp-pink text-uppercase">Consumo de alimento das famílais</h3>
+                                <h3 class="font-satoshi-black mb-3 fs-19 fs-sm-16 text-rdp-pink text-uppercase">Consumo de alimentos das famílias</h3>
                                 <?php the_field('social_embed_3'); ?>
                             </div>
 
                             <div class="mb-5 animate__animated" data-animation="fadeInUp">
-                                <h3 class="font-satoshi-regular mb-3 fs-19 fs-sm-16 text-rdp-pink text-uppercase">Variação dos salários</h3>
+                                <h3 class="font-satoshi-black mb-3 fs-19 fs-sm-16 text-rdp-pink text-uppercase">Variação dos salários</h3>
                                 <?php the_field('social_embed_4'); ?>
                             </div>
                         </div>
@@ -494,7 +530,7 @@ get_header();
                         <div class="col-10 rdp-container animate__animated" data-animation="fadeInUp">
                             <div class="mb-5">
                                 <h3 class="font-satoshi-black fs-19 fs-sm-16 text-rdp-green-water text-uppercase">Sequestro de carbono</h3>
-                                <p class="fs-18 fs-sm-16 text-rdp-green-water mb-5">É importante destacar que a fixação de carbono no solo e em pastagens de boa qualidade é capaz de compensar o aumento das emissões provocado pelo crescimento da pecuária.</p>
+                                <p class="fs-18 fs-sm-16 text-rdp-green-water mb-5">É importante destacar que a fixação de carbono no solo e em pastagens de boa qualidade seria é capaz de compensar o aumento das emissões provocado pelo crescimento da pecuária.</p>
                                 <h3 class="font-satoshi-black fs-24 fs-sm-18 text-uppercase mt-0 mb-2 text-end">Percentual - CO2 equivalente</h3>
                                 <div class="table-responsive">
                                     <?php // $table_co2_info = get_field('table_co2_info'); ?>
@@ -578,7 +614,7 @@ get_header();
                 <section id="staff" class="py-5">
                     <div class="row justify-content-center">
                         <div class="col-10 rdp-container mb-5">
-                            <h2 class="font-satoshi-black fs-28 fs-sm-24 text-uppercase">Equipe técnica</h2>
+                            <h2 class="font-satoshi-black fs-28 fs-sm-24 text-uppercase">Equipe técnica GPP/ESALQ/USP</h2>
                             <div class="d-flex flex-column flex-md-row justify-content-start">
                                 <?php
                                 $team = get_field('team');

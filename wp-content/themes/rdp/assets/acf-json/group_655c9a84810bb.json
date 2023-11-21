@@ -1,0 +1,45 @@
+{
+    "key": "group_655c9a84810bb",
+    "title": "Opções adicionais",
+    "fields": [
+        {
+            "key": "field_655c9a84bf1bf",
+            "label": "Limitar rotas (Menu ID)",
+            "name": "excluded_menu_pages",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Insira as identidades (Menu ID) dos itens de menu que deseja esconder. Separe os itens com vírgula (Exemplo: edit.php, edit-comments.php, tools.php)",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-options-opcoes-do-tema"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1700580009
+}

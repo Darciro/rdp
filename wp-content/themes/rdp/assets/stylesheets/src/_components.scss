@@ -415,10 +415,12 @@
   .form-check {
     margin: 0;
     padding-left: 1.25em;
+    cursor: pointer;
 
     .form-check-input {
       margin-left: -1.25em;
       background-color: $rdp-dark-grey;
+      cursor: pointer;
 
       &:checked {
         border-color: $rdp-secondary;
@@ -432,6 +434,7 @@
 
     label {
       padding: 0 5px;
+      cursor: pointer;
     }
   }
 
