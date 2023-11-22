@@ -16575,17 +16575,7 @@ body {
 
 /* Sections */
 section#intro {
-  /*@media (max-height: 840px) {
-    .intro-content {
-      > div {
-        height: 50vh;
-
-        &.intro-heading {
-          flex-basis: max-content;
-        }
-      }
-    }
-  }*/
+  min-height: 100vh;
 }
 section#intro .intro-heading {
   max-width: 1140px;

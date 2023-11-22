@@ -89,7 +89,7 @@
                 arrows: false,
                 infinite: true,
                 speed: 300,
-                slidesToShow: 7,
+                slidesToShow: 8,
                 slidesToScroll: 1,
                 responsive: [
                     {

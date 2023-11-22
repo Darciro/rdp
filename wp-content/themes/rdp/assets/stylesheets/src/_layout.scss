@@ -211,6 +211,8 @@
 /* Sections */
 section {
   &#intro {
+    min-height: 100vh;
+
     .intro-heading {
       max-width: 1140px;
       flex: 0 0 auto;
@@ -221,18 +223,6 @@ section {
         margin: 0 auto;
       }
     }
-
-    /*@media (max-height: 840px) {
-      .intro-content {
-        > div {
-          height: 50vh;
-
-          &.intro-heading {
-            flex-basis: max-content;
-          }
-        }
-      }
-    }*/
   }
 
   &#one-pager-section {

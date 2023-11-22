@@ -211,10 +211,10 @@ get_header();
                                             </div>
                                         </div>
                                         <div class="maps ratio ratio-1x1">
-                                            <img src="<?php echo get_template_directory_uri() ?>/assets/images/mapa-severo.png" class="map img-fluid active severe">
-                                            <img src="<?php echo get_template_directory_uri() ?>/assets/images/mapa-intermediario.png" class="map img-fluid active intermediary">
-                                            <img src="<?php echo get_template_directory_uri() ?>/assets/images/mapa-ausente.png" class="map img-fluid active absent">
-                                            <img src="<?php echo get_template_directory_uri() ?>/assets/images/mapa-todos.png" class="map default-map img-fluid">
+                                            <img src="<?php echo get_template_directory_uri() ?>/assets/images/mapa-severo.png?v=2" class="map img-fluid active severe">
+                                            <img src="<?php echo get_template_directory_uri() ?>/assets/images/mapa-intermediario.png?v=2" class="map img-fluid active intermediary">
+                                            <img src="<?php echo get_template_directory_uri() ?>/assets/images/mapa-ausente.png?v=2" class="map img-fluid active absent">
+                                            <img src="<?php echo get_template_directory_uri() ?>/assets/images/mapa-todos.png?v=2" class="map default-map img-fluid">
                                         </div>
                                     </div>
                                 </div>
@@ -377,7 +377,10 @@ get_header();
                             <div class="mb-5 animate__animated" data-animation="fadeInUp">
                                 <h3 class="font-satoshi-black mb-3 fs-19 fs-sm-16 text-rdp-pink text-uppercase">Consumo geral das famílias</h3>
                                 <?php the_field('social_embed_1'); ?>
-                                <hr>
+                            </div>
+
+                            <div class="mb-5 animate__animated" data-animation="fadeInUp">
+                                <h3 class="font-satoshi-black mb-3 fs-19 fs-sm-16 text-rdp-pink text-uppercase">Preços</h3>
                                 <?php the_field('social_embed_2'); ?>
                             </div>
 
