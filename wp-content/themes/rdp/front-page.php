@@ -21,13 +21,13 @@ get_header();
                 <section id="intro" class="text-white ignore-gutters bg-rdp-main">
                     <div class="row justify-content-center">
                         <div class="col-lg-12 text-center">
-                            <div class="d-flex flex-column justify-content-center justify-md-content-between intro-content">
+                            <div class="d-flex flex-column justify-content-between intro-content">
                                 <div class="intro-heading">
                                     <h1 class="text-center text-white font-satoshi-black fs-40 fs-sm-28 px-3 animate__animated animate__delay-1s" data-animation="fadeInUp"><?php the_field('intro_title'); ?></h1>
                                     <p class="fs-18 fs-sm-16 animate__animated animate__delay-2s" data-animation="fadeInUp"><?php the_field('intro_text'); ?></p>
                                 </div>
-                                <div class="d-none d-md-block">
-                                    <img src="<?php echo wp_get_attachment_image_url(get_field('background'), 'full'); ?>" class="img-fluid rdp-container">
+                                <div class="d-block">
+                                    <img src="<?php echo wp_get_attachment_image_url(get_field('background'), 'full'); ?>" class="img-fluid">
                                 </div>
                             </div>
                         </div>
@@ -86,7 +86,7 @@ get_header();
                             </a>
                         </div>
                         <div class="rounded-download-btn-wrapper my-3 my-md-0 mx-3 mx-xl-4">
-                            <a href="<?php the_field('complete_report'); ?>" target="_blank" download class="rounded-download-btn animate__animated" data-animation="fadeIn">
+                            <a href="<?php the_field('executive_summary_english'); ?>" target="_blank" download class="rounded-download-btn animate__animated" data-animation="fadeIn">
                                 <img src="<?php echo get_template_directory_uri() ?>/assets/images/download-pink.png" class="mx-auto img-fluid">
                                 <span class="font-satoshi-black fs-18 fs-sm-16 text-uppercase">Executive summary</span>
                             </a>

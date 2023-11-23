@@ -6,10 +6,9 @@ if (!defined('WPINC')) {
 }
 
 if (!class_exists('Setup')) :
-
     class Setup
     {
-        public $version = '1.3.2';
+        public $version = '1.3.3';
         public $theme_slug = 'rdp';
 
         public function __construct()
