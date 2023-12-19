@@ -16675,11 +16675,33 @@ section#complete-results:before {
   content: "";
   position: absolute;
   width: 100%;
-  height: 45%;
+  height: 115px;
   left: 0;
   bottom: 0;
   z-index: 0;
   background-color: #fff;
+}
+section#complete-results .rounded-download-btn-wrapper {
+  width: 200px;
+  height: 200px;
+  margin-top: 20px;
+}
+section#complete-results .rounded-download-btn-wrapper .rounded-download-btn {
+  width: 180px;
+  height: 180px;
+  padding: 15px;
+}
+section#complete-results .rounded-download-btn-wrapper .rounded-download-btn img {
+  max-width: 65px;
+}
+section#complete-results .rounded-download-btn-wrapper .rounded-download-btn span {
+  font-size: 16px !important;
+}
+section#complete-results .rounded-download-btn-wrapper:before {
+  width: 200px;
+  height: 200px;
+  margin-top: -120px;
+  margin-right: -90px;
 }
 section#environmental-results table.table-baseline th,
 section#environmental-results table.table-baseline tr {

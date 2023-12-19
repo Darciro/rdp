@@ -139,11 +139,11 @@
             "append": ""
         },
         {
-            "key": "field_652419cc2d675",
-            "label": "Sumário executivo",
-            "name": "executive_summary",
+            "key": "field_6581b18811e56",
+            "label": "Resultados (documentos)",
+            "name": "results",
             "aria-label": "",
-            "type": "file",
+            "type": "repeater",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -152,51 +152,57 @@
                 "class": "",
                 "id": ""
             },
-            "return_format": "url",
-            "library": "all",
-            "min_size": "",
-            "max_size": "",
-            "mime_types": ""
-        },
-        {
-            "key": "field_655f6f1f7f65d",
-            "label": "Executive summary",
-            "name": "executive_summary_english",
-            "aria-label": "",
-            "type": "file",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "return_format": "url",
-            "library": "all",
-            "min_size": "",
-            "max_size": "",
-            "mime_types": ""
-        },
-        {
-            "key": "field_65241a032d676",
-            "label": "Relatório completo",
-            "name": "complete_report",
-            "aria-label": "",
-            "type": "file",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "return_format": "url",
-            "library": "all",
-            "min_size": "",
-            "max_size": "",
-            "mime_types": ""
+            "layout": "row",
+            "pagination": 0,
+            "min": 1,
+            "max": 0,
+            "collapsed": "field_6581b1c211e57",
+            "button_label": "Adicionar documento",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_6581b1c211e57",
+                    "label": "Título do documento",
+                    "name": "doc_title",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_6581b18811e56"
+                },
+                {
+                    "key": "field_6581b1d011e58",
+                    "label": "Documento",
+                    "name": "doc",
+                    "aria-label": "",
+                    "type": "file",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "url",
+                    "library": "all",
+                    "min_size": "",
+                    "max_size": "",
+                    "mime_types": "",
+                    "parent_repeater": "field_6581b18811e56"
+                }
+            ]
         },
         {
             "key": "field_65241a262d677",
@@ -1971,5 +1977,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1700753201
+    "modified": 1702998678
 }

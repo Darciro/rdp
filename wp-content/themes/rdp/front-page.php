@@ -78,24 +78,24 @@ get_header();
 
                 <section id="complete-results" class="ignore-gutters pt-5 bg-rdp-pink">
                     <h2 class="font-satoshi-black fs-28 fs-sm-24 text-uppercase text-center text-white mb-5 mb-md-3 mt-md-5 animate__animated" data-animation="fadeInUp"><?php the_field('report_title'); ?></h2>
-                    <div class="d-flex flex-column flex-md-row justify-content-center align-items-center">
-                        <div class="rounded-download-btn-wrapper mx-3 mx-xl-4">
-                            <a href="<?php the_field('executive_summary'); ?>" target="_blank" download class="rounded-download-btn animate__animated" data-animation="fadeIn">
-                                <img src="<?php echo get_template_directory_uri() ?>/assets/images/download-pink.png" class="mx-auto img-fluid">
-                                <span class="font-satoshi-black fs-18 fs-sm-16 text-uppercase">Sumário executivo</span>
-                            </a>
-                        </div>
-                        <div class="rounded-download-btn-wrapper my-3 my-md-0 mx-3 mx-xl-4">
-                            <a href="<?php the_field('executive_summary_english'); ?>" target="_blank" download class="rounded-download-btn animate__animated" data-animation="fadeIn">
-                                <img src="<?php echo get_template_directory_uri() ?>/assets/images/download-pink.png" class="mx-auto img-fluid">
-                                <span class="font-satoshi-black fs-18 fs-sm-16 text-uppercase">Executive summary</span>
-                            </a>
-                        </div>
-                        <div class="rounded-download-btn-wrapper my-3 my-md-0 mx-3 mx-xl-4">
-                            <a href="<?php the_field('complete_report'); ?>" target="_blank" download class="rounded-download-btn animate__animated" data-animation="fadeIn">
-                                <img src="<?php echo get_template_directory_uri() ?>/assets/images/download-pink.png" class="mx-auto img-fluid">
-                                <span class="font-satoshi-black fs-18 fs-sm-16 text-uppercase">Relatório completo</span>
-                            </a>
+                    <div class="row justify-content-center">
+                        <div class="col-10">
+
+                            <div class="row row-cols-lg-3 row-cols-xl-4 justify-content-center align-items-center">
+                                <?php if (have_rows('results')):
+                                    while (have_rows('results')): the_row(); ?>
+                                        <div class="col mb-3">
+                                            <div class="rounded-download-btn-wrapper mx-auto">
+                                                <a href="<?php the_sub_field('doc'); ?>" target="_blank" download class="rounded-download-btn d-flex flex-column animate__animated" data-animation="fadeIn">
+                                                    <img src="<?php echo get_template_directory_uri() ?>/assets/images/download-pink.png" class="mx-auto img-fluid">
+                                                    <span class="font-satoshi-black fs-18 fs-sm-16 text-uppercase"><?php the_sub_field('doc_title'); ?></span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    <?php endwhile;
+                                endif; ?>
+                            </div>
+
                         </div>
                     </div>
                 </section>
